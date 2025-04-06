@@ -52,11 +52,11 @@ public class EnemyMovement : MonoBehaviour
     {
         if(targetDirection == Vector2.zero)
         {
-            rigidbody.velocity = Vector2.zero;
+            rigidbody.linearVelocity = Vector2.zero;
         }
         else 
         {
-            rigidbody.velocity = transform.up * speed;
+            rigidbody.linearVelocity = transform.up * speed;
         }
     }
 }
