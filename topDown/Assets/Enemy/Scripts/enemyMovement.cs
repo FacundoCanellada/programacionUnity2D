@@ -11,11 +11,13 @@ public class EnemyMovement : MonoBehaviour
     private Rigidbody2D rigidbody;
     private enemyController enemyController;
     private Vector2 targetDirection;
+    private float changeDirectionCooldown;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
         enemyController = GetComponent<enemyController>();
+        targetDirection = transform.up;
     }
     private void FixedUpdate()
     {
@@ -26,22 +28,34 @@ public class EnemyMovement : MonoBehaviour
 
     private void updateTargetDirection()
     {
-        if(enemyController.awareOfPlayer)
+        handleRandomDirectionChange();
+        handlePlayerTargeting();
+    }
+
+    private void handleRandomDirectionChange()
+    {
+        changeDirectionCooldown -= Time.deltaTime;
+
+        if (changeDirectionCooldown <= 0)
+        {
+            float angleChange = Random.Range(-90f, 90f);
+            Quaternion rotation = Quaternion.AngleAxis(angleChange, transform.forward);
+            targetDirection = rotation * targetDirection;
+
+            changeDirectionCooldown = Random.Range(1f, 5f);
+        }
+    }
+
+    private void handlePlayerTargeting()
+    {
+        if (enemyController.awareOfPlayer)
         {
             targetDirection = enemyController.directionToPlayer;
-        }
-        else
-        {
-            targetDirection = Vector2.zero;
         }
     }
 
     private void rotateTowardsTarget()
     {
-        if (targetDirection == Vector2.zero)
-        {
-            return;
-        }
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward,  targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
@@ -50,13 +64,7 @@ public class EnemyMovement : MonoBehaviour
 
     private void setVelocity()
     {
-        if(targetDirection == Vector2.zero)
-        {
-            rigidbody.linearVelocity = Vector2.zero;
-        }
-        else 
-        {
-            rigidbody.linearVelocity = transform.up * speed;
-        }
+        rigidbody.linearVelocity = transform.up * speed;
+     
     }
 }
