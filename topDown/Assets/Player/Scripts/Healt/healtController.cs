@@ -18,6 +18,7 @@ public class healt : MonoBehaviour
 
     public UnityEvent onDied;
     public UnityEvent onDamaged;
+    public UnityEvent onHealthChanged;
     public void takeDamge(float damgeAmount)
     {
         if (currentHealth == 0)
@@ -31,6 +32,8 @@ public class healt : MonoBehaviour
         }
 
         currentHealth -= damgeAmount;
+
+        onHealthChanged.Invoke();
 
         if (currentHealth < 0)
         {
@@ -54,6 +57,9 @@ public class healt : MonoBehaviour
             return;
         }
         currentHealth += amountToAdd;
+
+        onHealthChanged.Invoke();
+
         if (currentHealth > maximunHealth)
         {
             currentHealth = maximunHealth;
