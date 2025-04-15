@@ -51,7 +51,6 @@ public class shooting : MonoBehaviour
         {
             Fire();
             firetimer = 0f;
-            Debug.Log("fuego");
 
         }
 
