@@ -209,4 +209,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 0
+  xpOrbPrefab: {fileID: 1258233889311955165, guid: 2f6a531d0f6085b4c9b151e031f8d779, type: 3}
