@@ -583,6 +583,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6460216091261504927, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: invincibilityDuration
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: onDied.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 

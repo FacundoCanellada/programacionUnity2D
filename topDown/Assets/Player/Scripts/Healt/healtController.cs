@@ -26,10 +26,10 @@ public class healt : MonoBehaviour
             return;
         }
 
-        if (isInvincible)
-        {
-            return;
-        }
+        // if (isInvincible)
+        // {
+        //     return;
+        // }
 
         currentHealth -= damgeAmount;
 
