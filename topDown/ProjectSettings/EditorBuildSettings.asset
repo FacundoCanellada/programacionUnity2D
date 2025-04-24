@@ -6,10 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/MenuMain/MainMenu.unity
+    guid: 2e4730d73f4e85143b3e6660fdf765b2
+  - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/DefeatMenu/DefeatMenu.unity
+    path: Assets/MenuDefeat/DefeatMenu.unity
     guid: 7d384da81cdc6134682bf6432ded2a59
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
