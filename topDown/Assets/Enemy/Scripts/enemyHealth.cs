@@ -7,7 +7,12 @@ public class enemyHealth : MonoBehaviour
 
    [Header("XP Drop")]
    [SerializeField] private GameObject xpOrbPrefab;
-   void Start()
+
+    [Header("Health Drop")]
+    [SerializeField] private GameObject healthPrefab;
+    [Range(0f, 1f)]
+    [SerializeField] private float healthDropChance = 0.3f;
+    void Start()
    {
       currentHealth = maxHealth;
    }
@@ -21,7 +26,7 @@ public class enemyHealth : MonoBehaviour
       {
          Die();
       }
-   }
+    }
 
    private void Die()
    {
@@ -29,7 +34,15 @@ public class enemyHealth : MonoBehaviour
       {
          Instantiate(xpOrbPrefab, transform.position, Quaternion.identity);
       }
-      Destroy(gameObject);
+
+        if (healthPrefab != null && Random.value <= healthDropChance)
+        {
+            // Podés cambiar la posición si querés que no se superpongan
+            Vector3 dropPosition = transform.position + new Vector3(0.5f, 0, 0);
+            Instantiate(healthPrefab, dropPosition, Quaternion.identity);
+        }
+
+        Destroy(gameObject);
    }
 }
 
