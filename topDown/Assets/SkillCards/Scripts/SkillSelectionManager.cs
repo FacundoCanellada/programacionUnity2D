@@ -3,10 +3,7 @@ using System.Collections.Generic;
 
 public class SkillSelectionManager : MonoBehaviour
 {
-    private void Start()
-    {
-        ShowSkillChoices();
-    }
+ 
     public static SkillSelectionManager Instance { get; private set; }
 
     [Header("Configuración del menú")]
@@ -30,6 +27,7 @@ public class SkillSelectionManager : MonoBehaviour
 
     public void ShowSkillChoices()
     {
+        cardSpawnParent.gameObject.SetActive(true);
         ClearPreviousCards();
         currentChoices.Clear();
 
@@ -46,9 +44,8 @@ public class SkillSelectionManager : MonoBehaviour
             SkillCardUI uiComponent = cardGO.GetComponent<SkillCardUI>();
             uiComponent.skillCard = randomSkill;
         }
-
-        // Mostrar el menú
         cardSpawnParent.gameObject.SetActive(true);
+        Time.timeScale = 0f;
     }
 
     public void ClearPreviousCards()
@@ -61,10 +58,9 @@ public class SkillSelectionManager : MonoBehaviour
 
     public void OnCardSelected(SkillCard selectedCard)
     {
-        // Aplicar efecto de la carta seleccionada
-        Debug.Log("Seleccionaste: " + selectedCard.cardName);
-
-        // Ocultar el menú después de elegir
+        // despues de elegir
         cardSpawnParent.gameObject.SetActive(false);
+        Time.timeScale = 1f;
+        
     }
 }
