@@ -353,6 +353,8 @@ MonoBehaviour:
   currentXP: 0
   level: 1
   xpToNextLevel: 100
+  xpBarUi: {fileID: 0}
+  levelText: {fileID: 0}
 --- !u!1 &3658548429364739803
 GameObject:
   m_ObjectHideFlags: 0

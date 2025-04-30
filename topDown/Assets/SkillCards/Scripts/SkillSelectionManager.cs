@@ -10,6 +10,7 @@ public class SkillSelectionManager : MonoBehaviour
     public GameObject cardPrefab; 
     public Transform cardSpawnParent; 
     public List<SkillCard> allAvailableSkills;
+    public GameObject player;
 
     private List<SkillCard> currentChoices = new List<SkillCard>();
 
@@ -58,6 +59,7 @@ public class SkillSelectionManager : MonoBehaviour
 
     public void OnCardSelected(SkillCard selectedCard)
     {
+        selectedCard.ApplySkill(player);
         // despues de elegir
         cardSpawnParent.gameObject.SetActive(false);
         Time.timeScale = 1f;

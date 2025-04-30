@@ -1,24 +1,27 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
+
 public class healt : MonoBehaviour
 {
-    [SerializeField]
-    private float currentHealth;
-    [SerializeField]
-    private float maximunHealth;
+    [SerializeField] public float healthStart;
+    [SerializeField] public float currentHealth;
+    [SerializeField] public float maximunHealth;
 
-    public float remainingHealthPercentage
+    private void Start()
     {
-        get
-        {
-            return currentHealth / maximunHealth;
-        }
+        healthStart = 100f;    
+    maximunHealth = healthStart;
+    currentHealth = maximunHealth;
     }
+    
+
     public bool isInvincible { get; set; }
 
     public UnityEvent onDied;
     public UnityEvent onDamaged;
     public UnityEvent onHealthChanged;
+
     public void takeDamge(float damgeAmount)
     {
         if (currentHealth == 0)
@@ -39,6 +42,7 @@ public class healt : MonoBehaviour
         {
             currentHealth = 0;
         }
+
         if (currentHealth == 0)
         {
             onDied.Invoke();
@@ -51,11 +55,11 @@ public class healt : MonoBehaviour
 
     public void addHealth(float amountToAdd)
     {
-        //agregar en este metodo salud 
         if (currentHealth == maximunHealth)
         {
             return;
         }
+
         currentHealth += amountToAdd;
 
         onHealthChanged.Invoke();
@@ -64,5 +68,12 @@ public class healt : MonoBehaviour
         {
             currentHealth = maximunHealth;
         }
+    }
+
+    public void IncreaseHealt(float amountToAdd)
+    {
+        maximunHealth += amountToAdd;
+        Debug.Log(maximunHealth);
+        onHealthChanged.Invoke();
     }
 }

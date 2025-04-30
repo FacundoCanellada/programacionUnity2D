@@ -38,15 +38,14 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("La bala impactó con un enemigo");
+           
             gameObject.SetActive(false);
 
             enemyHealth enemyHealth = other.GetComponent<enemyHealth>();
             if (enemyHealth != null)
             {
-                Debug.Log($"Enemigo encontrado, aplicando {damage} de daño");
                 enemyHealth.TakeDamage(damage);
-                Debug.Log("Daño real aplicado: " + damage);
+                
             }
           
             

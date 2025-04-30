@@ -4,8 +4,9 @@ public class healthBarUi : MonoBehaviour
 {
     [SerializeField]
     private UnityEngine.UI.Image healthBarForegroundImage;
-    public void updateHealthBar(healt healthController)
+    public void updateHealthBar(healt hhealt)
     {
-        healthBarForegroundImage.fillAmount = healthController.remainingHealthPercentage;
+        healthBarForegroundImage.fillAmount = hhealt.currentHealth / hhealt.maximunHealth;
+        
     }
 }

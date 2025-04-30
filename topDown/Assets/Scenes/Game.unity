@@ -628,11 +628,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1831113989250691574, guid: b567fe1eb9be02e4291bd62114c822a7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.2833252
+      value: -3.2832031
       objectReference: {fileID: 0}
     - target: {fileID: 1831113989250691574, guid: b567fe1eb9be02e4291bd62114c822a7, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -58.844
+      value: -58.843994
       objectReference: {fileID: 0}
     - target: {fileID: 1831113989250691574, guid: b567fe1eb9be02e4291bd62114c822a7, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -855,6 +855,10 @@ PrefabInstance:
     - target: {fileID: 6460216091261504927, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: invincibilityDuration
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: maximunHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: onDied.m_PersistentCalls.m_Calls.Array.data[3].m_Target

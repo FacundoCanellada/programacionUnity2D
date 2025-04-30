@@ -48,5 +48,6 @@ MonoBehaviour:
   cardSpawnParent: {fileID: 1831113989250691574, guid: b567fe1eb9be02e4291bd62114c822a7, type: 3}
   allAvailableSkills:
   - {fileID: 9011468175343798814, guid: 896e49fb5709d824491828f7eaa411cd, type: 3}
-  - {fileID: 9011468175343798814, guid: 896e49fb5709d824491828f7eaa411cd, type: 3}
-  - {fileID: 9011468175343798814, guid: 896e49fb5709d824491828f7eaa411cd, type: 3}
+  - {fileID: 2799897396813156172, guid: 6b84f9503dea8af4fb4c11377f7983c7, type: 3}
+  - {fileID: 2799897396813156172, guid: 6b84f9503dea8af4fb4c11377f7983c7, type: 3}
+  player: {fileID: 2671699002646374585, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}

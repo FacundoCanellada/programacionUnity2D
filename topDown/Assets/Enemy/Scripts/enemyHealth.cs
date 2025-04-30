@@ -21,8 +21,7 @@ public class enemyHealth : MonoBehaviour
    {
       
       currentHealth -= damage;
-      Debug.Log(currentHealth);
-      if (currentHealth <= 0)
+    if (currentHealth <= 0)
       {
          Die();
       }
@@ -37,7 +36,7 @@ public class enemyHealth : MonoBehaviour
 
         if (healthPrefab != null && Random.value <= healthDropChance)
         {
-            // Podés cambiar la posición si querés que no se superpongan
+            // Podï¿½s cambiar la posiciï¿½n si querï¿½s que no se superpongan
             Vector3 dropPosition = transform.position + new Vector3(0.5f, 0, 0);
             Instantiate(healthPrefab, dropPosition, Quaternion.identity);
         }

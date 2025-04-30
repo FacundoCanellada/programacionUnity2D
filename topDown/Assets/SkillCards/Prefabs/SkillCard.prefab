@@ -97,6 +97,9 @@ MonoBehaviour:
   description: 
   currentLevel: 1
   maxLevel: 5
+  cardType: 0
+  statType: 0
+  abilityType: 0
   nameText: {fileID: 313720854556228142}
   descriptionText: {fileID: 5382853549900538064}
   image: {fileID: 1033168672530212481}
@@ -112,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f0678982b85b994a85caea77942bba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skillCard: {fileID: 0}
+  skillCard: {fileID: 9011468175343798814}
 --- !u!1 &2237015233244010626
 GameObject:
   m_ObjectHideFlags: 0
