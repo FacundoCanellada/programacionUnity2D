@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     void Start()
     {
         startHealth = 100f;
-        startDamage = 100;
+        startDamage = 10;
         damage = startDamage;
         startBullets = 100f;
         startArmor = 100f;

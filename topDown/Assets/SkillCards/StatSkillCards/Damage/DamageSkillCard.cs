@@ -12,19 +12,15 @@ public class DamageSkillCard : SkillCard
             return;
         }
 
-        healt health = player.GetComponent<healt>();
+        
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
-        if (health != null)
-        {
+
             //toma el valor de la vida inicial obtiene el 20% y se lo suma a la vida maxima
             float ammount = playerStats.startDamage;
             ammount *= 1.20f;
             playerStats.damage += ammount;
-            Debug.Log(health.maximunHealth);
-        }
-        else
-        {
-            Debug.LogWarning("El objeto con tag 'Player' no tiene el componente 'healt'");
-        }
+            Debug.Log(playerStats.damage);
+        
+     
     }
 }

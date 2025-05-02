@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -11,8 +12,16 @@ public class Bullet : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
         
+        damage = playerStats.startDamage;
+    }
+
+    
+
+    private void OnEnable()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
         damage = playerStats.damage;
-        
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

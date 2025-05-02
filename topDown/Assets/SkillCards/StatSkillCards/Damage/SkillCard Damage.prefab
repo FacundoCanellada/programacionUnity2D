@@ -122,3 +122,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b90abb95e032f04f821c78d53bafb4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardName: Damage
+  cardImage: {fileID: 0}
+  description: +20% Damage
+  currentLevel: 1
+  maxLevel: 5
+  cardType: 0
+  statType: 2
+  abilityType: 0
+  nameText: {fileID: 0}
+  descriptionText: {fileID: 0}
+  image: {fileID: 0}
