@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 6460216091261504927}
   - component: {fileID: 6124845378771821863}
   - component: {fileID: 5879832096449744893}
+  - component: {fileID: 7432084018461842615}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -370,6 +371,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardCapacity: 4
+--- !u!114 &7432084018461842615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2671699002646374585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d56cba9c86747444fb379f096ddbb85d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 0
+  startDamage: 0
+  startBullets: 0
+  startArmor: 0
+  startSpeed: 0
 --- !u!1 &3658548429364739803
 GameObject:
   m_ObjectHideFlags: 0

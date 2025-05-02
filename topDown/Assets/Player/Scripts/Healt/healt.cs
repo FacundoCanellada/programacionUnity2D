@@ -4,17 +4,19 @@ using UnityEngine.Events;
 
 public class healt : MonoBehaviour
 {
-    [SerializeField] public float healthStart;
     [SerializeField] public float currentHealth;
     [SerializeField] public float maximunHealth;
-
+    
+   
     private void Start()
     {
-        healthStart = 100f;    
-    maximunHealth = healthStart;
-    currentHealth = maximunHealth;
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        
+        maximunHealth = playerStats.startHealth;
+        currentHealth = maximunHealth;
     }
-    
+
 
     public bool isInvincible { get; set; }
 
@@ -68,12 +70,5 @@ public class healt : MonoBehaviour
         {
             currentHealth = maximunHealth;
         }
-    }
-
-    public void IncreaseHealt()
-    {
-        maximunHealth *= 1.20f ;
-        Debug.Log(maximunHealth);
-        onHealthChanged.Invoke();
     }
 }

@@ -5,8 +5,15 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 5f;
     public float lifetime = 1f;
-
-    public int damage = 10;
+    public float damage;
+    private void Start()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        
+        damage = playerStats.damage;
+        
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SetLifetime(float time)

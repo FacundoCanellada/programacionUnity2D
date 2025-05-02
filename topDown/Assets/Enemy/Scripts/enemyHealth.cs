@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
-   [SerializeField] private int maxHealth = 100;
-   private int currentHealth;
+   [SerializeField] private float maxHealth = 100;
+   private float currentHealth;
 
    [Header("XP Drop")]
    [SerializeField] private GameObject xpOrbPrefab;
@@ -17,7 +17,7 @@ public class enemyHealth : MonoBehaviour
       currentHealth = maxHealth;
    }
 
-   public void TakeDamage(int damage)
+   public void TakeDamage(float damage)
    {
       
       currentHealth -= damage;
