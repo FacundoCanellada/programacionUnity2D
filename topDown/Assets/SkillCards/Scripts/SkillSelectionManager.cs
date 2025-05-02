@@ -1,68 +1,70 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq;
 
 public class SkillSelectionManager : MonoBehaviour
 {
- 
     public static SkillSelectionManager Instance { get; private set; }
 
     [Header("Configuración del menú")]
-    public GameObject cardPrefab; 
-    public Transform cardSpawnParent; 
+    public GameObject cardPrefab;
+    public Transform cardSpawnParent;
     public List<SkillCard> allAvailableSkills;
     public GameObject player;
 
-    private List<SkillCard> currentChoices = new List<SkillCard>();
+    private List<SkillCard> currentChoices = new();
 
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject); // Evita duplicados si hay más de uno en escena
-        }
+    private void Awake() {
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
     }
 
-    public void ShowSkillChoices()
-    {
+    public void ShowSkillChoices() {
         cardSpawnParent.gameObject.SetActive(true);
         ClearPreviousCards();
         currentChoices.Clear();
 
-        // Elegir 3 cartas aleatorias
-        for (int i = 0; i < 3; i++)
-        {
-            SkillCard randomSkill = allAvailableSkills[Random.Range(0, allAvailableSkills.Count)];
+        var inventory = player.GetComponent<PlayerSkillInventory>();
+
+        // Filtrar solo cartas que puedan aparecer según las reglas:
+        List<SkillCard> filteredSkills = allAvailableSkills.Where(skill => {
+            // Si ya está y está al máximo nivel, no mostrar
+            if (inventory.HasSkill(skill.cardName) && inventory.GetSkill(skill.cardName).IsMaxLevel()) return false;
+
+            // Si no la tiene y ya está lleno el tipo (stat/habilidad), no mostrar
+            if (!inventory.HasSkill(skill.cardName) && !inventory.CanAddSkillOfType(skill.cardType)) return false;
+
+            return true;
+        }).ToList();
+
+        // Elegir hasta 3 cartas aleatorias del conjunto filtrado
+        for (int i = 0; i < 3 && filteredSkills.Count > 0; i++) {
+            SkillCard randomSkill = filteredSkills[Random.Range(0, filteredSkills.Count)];
+            filteredSkills.Remove(randomSkill); // evitar repetir cartas
             currentChoices.Add(randomSkill);
 
-            // Instanciar visualmente la carta
+            // Instanciar la carta visual
             GameObject cardGO = Instantiate(cardPrefab, cardSpawnParent);
-            SkillCard cardComponent = cardGO.GetComponent<SkillCard>();
-            cardComponent.SetupCard(randomSkill); 
-            SkillCardUI uiComponent = cardGO.GetComponent<SkillCardUI>();
-            uiComponent.skillCard = randomSkill;
+            cardGO.GetComponent<SkillCard>().SetupCard(randomSkill);
+            cardGO.GetComponent<SkillCardUI>().skillCard = randomSkill;
         }
-        cardSpawnParent.gameObject.SetActive(true);
-        Time.timeScale = 0f;
-    }
 
-    public void ClearPreviousCards()
-    {
-        foreach (Transform child in cardSpawnParent)
-        {
-            Destroy(child.gameObject);
-        }
+        Time.timeScale = 0f; // Pausar juego mientras el menú está activo
     }
+//limpiar cartas anteriores
+    public void ClearPreviousCards() {
+        foreach (Transform child in cardSpawnParent) Destroy(child.gameObject);
+    }
+//al seleccionar la carta
+    public void OnCardSelected(SkillCard selectedCard) {
+        var inventory = player.GetComponent<PlayerSkillInventory>();
 
-    public void OnCardSelected(SkillCard selectedCard)
-    {
-        selectedCard.ApplySkill(player);
-        // despues de elegir
+        inventory.AddOrLevelUpSkill(selectedCard);
+        var playerSkill = inventory.GetSkill(selectedCard.cardName);
+        playerSkill.ApplySkill();
+
         cardSpawnParent.gameObject.SetActive(false);
         Time.timeScale = 1f;
-        
     }
 }
+

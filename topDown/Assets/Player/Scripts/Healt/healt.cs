@@ -72,7 +72,7 @@ public class healt : MonoBehaviour
 
     public void IncreaseHealt()
     {
-        maximunHealth += 20;
+        maximunHealth *= 1.20f ;
         Debug.Log(maximunHealth);
         onHealthChanged.Invoke();
     }

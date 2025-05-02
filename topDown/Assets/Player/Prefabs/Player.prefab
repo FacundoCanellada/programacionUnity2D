@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 3407542277566417959}
   - component: {fileID: 6460216091261504927}
   - component: {fileID: 6124845378771821863}
-  - component: {fileID: 8256405519531360602}
+  - component: {fileID: 5879832096449744893}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -357,7 +357,7 @@ MonoBehaviour:
   xpToNextLevel: 100
   xpBarUi: {fileID: 0}
   levelText: {fileID: 0}
---- !u!114 &8256405519531360602
+--- !u!114 &5879832096449744893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,9 +366,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2671699002646374585}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3a5c2e3ff5b49041b47ca44f4c24d6d, type: 3}
+  m_Script: {fileID: 11500000, guid: 723ebe19605b8d34bbadf4538f612d44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cardCapacity: 4
 --- !u!1 &3658548429364739803
 GameObject:
   m_ObjectHideFlags: 0

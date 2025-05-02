@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealthSkillCard : SkillCard
 {
-    public override void ApplySkill(GameObject _)
+    public override void ApplySkill()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
 
