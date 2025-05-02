@@ -70,9 +70,9 @@ public class healt : MonoBehaviour
         }
     }
 
-    public void IncreaseHealt(float amountToAdd)
+    public void IncreaseHealt()
     {
-        maximunHealth += amountToAdd;
+        maximunHealth += 20;
         Debug.Log(maximunHealth);
         onHealthChanged.Invoke();
     }

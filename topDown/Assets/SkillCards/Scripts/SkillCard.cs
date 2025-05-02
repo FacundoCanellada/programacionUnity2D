@@ -50,6 +50,7 @@ public class SkillCard : MonoBehaviour
     public virtual void ApplySkill(GameObject player)
     {
         // Lógica para aplicar la habilidad al jugador
+       
     }
 
     public bool CanLevelUp()

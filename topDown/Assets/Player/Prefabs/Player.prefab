@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 3407542277566417959}
   - component: {fileID: 6460216091261504927}
   - component: {fileID: 6124845378771821863}
+  - component: {fileID: 8256405519531360602}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -230,6 +231,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dcbf78256baffd4f855a1f410a39dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthStart: 0
   currentHealth: 100
   maximunHealth: 100
   onDied:
@@ -355,6 +357,18 @@ MonoBehaviour:
   xpToNextLevel: 100
   xpBarUi: {fileID: 0}
   levelText: {fileID: 0}
+--- !u!114 &8256405519531360602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2671699002646374585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3a5c2e3ff5b49041b47ca44f4c24d6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3658548429364739803
 GameObject:
   m_ObjectHideFlags: 0
