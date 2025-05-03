@@ -4,34 +4,28 @@ using UnityEngine.UI;
 public class BrightnessSlider : MonoBehaviour
 {
     public Slider slider;
-    public float sliderValue;
-    public Image brigthnessPanel;
-    public float valorBlack;
-    public float valorWhite;
+    public Image brightnessPanel;
 
     void Start()
     {
-        slider.value = PlayerPrefs.GetFloat("brillo", 0.5f);
-        brigthnessPanel.color = new Color(brigthnessPanel.color.r, brigthnessPanel.color.g, brigthnessPanel.color.b, slider.value);
+        float savedValue = PlayerPrefs.GetFloat("brillo", 0.5f);
+        slider.value = savedValue;
+        ApplyBrightness(savedValue);
     }
-    void Update()
+
+    public void ChangeSlider(float value)
     {
-        valorBlack = 1 - sliderValue - 0.5f;
-        valorWhite = sliderValue - 0.5f;
-        if (sliderValue < 0.5f)
-        {
-            brigthnessPanel.color = new Color(0, 0, 0, valorBlack);
-        }
-        if (sliderValue > 0.5f)
-        {
-            brigthnessPanel.color = new Color(255, 255, 255, valorWhite);
-        }
+        PlayerPrefs.SetFloat("brillo", value);
+        ApplyBrightness(value);
     }
-    public void changeSlider(float value)
+
+    private void ApplyBrightness(float value)
     {
-        sliderValue = value;
-        PlayerPrefs.SetFloat("brillo", sliderValue);
-        brigthnessPanel.color = new Color(brigthnessPanel.color.r, brigthnessPanel.color.g, brigthnessPanel.color.b, sliderValue / 3);
+        // Si el valor es menor a 0.5, oscurece (negro). Si es mayor, aclara (blanco).
+        float alpha = Mathf.Abs(value - 0.5f) * 2f;
+        Color overlayColor = value < 0.5f ? Color.black : Color.white;
+        overlayColor.a = alpha;
+
+        brightnessPanel.color = overlayColor;
     }
 }
-
