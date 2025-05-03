@@ -15,15 +15,6 @@ public class Bullet : MonoBehaviour
         damage = playerStats.startDamage;
     }
 
-    
-
-    private void OnEnable()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        PlayerStats playerStats = player.GetComponent<PlayerStats>();
-        damage = playerStats.damage;
-    }
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SetLifetime(float time)
     {
