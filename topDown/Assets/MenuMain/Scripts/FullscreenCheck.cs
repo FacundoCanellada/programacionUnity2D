@@ -33,45 +33,33 @@ public class FullscreenCheck : MonoBehaviour
     {
         resolutions = Screen.resolutions;
         resolutionsDropDown.ClearOptions();
-
         List<string> options = new List<string>();
-        HashSet<string> uniqueResolutions = new HashSet<string>();
-        List<Resolution> filteredResolutions = new List<Resolution>();
-        int currentResolutionIndex = 0;
+        int actuallyResolutions = 0;
 
         for (int i = 0; i < resolutions.Length; i++)
         {
-            string resString = resolutions[i].width + " x " + resolutions[i].height;
+            string option = resolutions[i].width + " x " + resolutions[i].height;
+            options.Add(option);
 
-            if (!uniqueResolutions.Contains(resString))
+            if (Screen.fullScreen && resolutions[i].width == Screen.currentResolution.width &&
+                resolutions[i].height == Screen.currentResolution.height)
             {
-                uniqueResolutions.Add(resString);
-                options.Add(resString);
-                filteredResolutions.Add(resolutions[i]);
-
-                if (resolutions[i].width == Screen.currentResolution.width &&
-                    resolutions[i].height == Screen.currentResolution.height)
-                {
-                    currentResolutionIndex = filteredResolutions.Count - 1;
-                }
+                actuallyResolutions = i;
             }
         }
 
-        resolutions = filteredResolutions.ToArray(); // Guardamos la lista limpia
-
         resolutionsDropDown.AddOptions(options);
-
-        int savedIndex = PlayerPrefs.GetInt("resolucion", currentResolutionIndex);
-        resolutionsDropDown.value = savedIndex;
+        resolutionsDropDown.value = actuallyResolutions;
         resolutionsDropDown.RefreshShownValue();
+
+        resolutionsDropDown.value = PlayerPrefs.GetInt("resolucion", 0);
     }
 
     public void changeResolution(int indexResolution)
     {
-        PlayerPrefs.SetInt("resolucion", indexResolution);
+        PlayerPrefs.SetInt("resolucion", resolutionsDropDown.value);
 
         Resolution resolution = resolutions[indexResolution];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
     }
-
 }
