@@ -1,65 +1,76 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
 
-public class FullscreenCheck : MonoBehaviour
+public class ResolutionSettings : MonoBehaviour
 {
-    public Toggle toggle;
-
     public TMP_Dropdown resolutionsDropDown;
-    Resolution[] resolutions;
-    private void Start()
-    {
-        if(Screen.fullScreen)
-        {
-            toggle.isOn = true;
-        }
-        else 
-        {   
-            toggle.isOn = false;
-        }
+    public Toggle fullscreenToggle;
 
-        checkResolution();
-    }
-    public void activateFullscreen(bool fullScreen)
+    private Resolution[] allResolutions;
+    private List<Resolution> filteredResolutions = new List<Resolution>();
+
+    public void Start()
     {
-        Screen.fullScreen = fullScreen;
+        LoadSettings();
     }
 
-    public void checkResolution()
+    public void LoadSettings()
     {
-        resolutions = Screen.resolutions;
+        allResolutions = Screen.resolutions;
         resolutionsDropDown.ClearOptions();
+
         List<string> options = new List<string>();
-        int actuallyResolutions = 0;
+        HashSet<string> uniqueResolutions = new HashSet<string>();
+        filteredResolutions.Clear();
 
-        for (int i = 0; i < resolutions.Length; i++)
+        int currentResolutionIndex = 0;
+
+        for (int i = 0; i < allResolutions.Length; i++)
         {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
+            string option = allResolutions[i].width + " x " + allResolutions[i].height;
 
-            if (Screen.fullScreen && resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            if (uniqueResolutions.Add(option))
             {
-                actuallyResolutions = i;
+                options.Add(option);
+                filteredResolutions.Add(allResolutions[i]);
+
+                if (allResolutions[i].width == Screen.currentResolution.width &&
+                    allResolutions[i].height == Screen.currentResolution.height)
+                {
+                    currentResolutionIndex = options.Count - 1;
+                }
             }
         }
 
         resolutionsDropDown.AddOptions(options);
-        resolutionsDropDown.value = actuallyResolutions;
+
+        int savedResolutionIndex = PlayerPrefs.GetInt("resolucion", currentResolutionIndex);
+        resolutionsDropDown.value = savedResolutionIndex;
         resolutionsDropDown.RefreshShownValue();
 
-        resolutionsDropDown.value = PlayerPrefs.GetInt("resolucion", 0);
+        bool isFullscreen = PlayerPrefs.GetInt("fullscreen", 1) == 1;
+        fullscreenToggle.isOn = isFullscreen;
+
+        ApplyResolution(savedResolutionIndex, isFullscreen);
     }
 
-    public void changeResolution(int indexResolution)
+    public void OnResolutionChange(int index)
     {
-        PlayerPrefs.SetInt("resolucion", resolutionsDropDown.value);
+        PlayerPrefs.SetInt("resolucion", index);
+        ApplyResolution(index, fullscreenToggle.isOn);
+    }
 
-        Resolution resolution = resolutions[indexResolution];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    public void OnFullscreenToggle(bool isFullscreen)
+    {
+        PlayerPrefs.SetInt("fullscreen", isFullscreen ? 1 : 0);
+        ApplyResolution(resolutionsDropDown.value, isFullscreen);
+    }
+
+    private void ApplyResolution(int index, bool isFullscreen)
+    {
+        Resolution resolution = filteredResolutions[index];
+        Screen.SetResolution(resolution.width, resolution.height, isFullscreen);
     }
 }
