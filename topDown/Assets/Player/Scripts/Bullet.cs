@@ -6,23 +6,8 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 5f;
     public float lifetime = 1f;
-    public float damage;
-    private void Start()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        PlayerStats playerStats = player.GetComponent<PlayerStats>();
-        
-        damage = playerStats.startDamage;
-    }
-
+    [SerializeField] public float damage;
     
-
-    private void OnEnable()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        PlayerStats playerStats = player.GetComponent<PlayerStats>();
-        damage = playerStats.damage;
-    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void SetLifetime(float time)
@@ -32,6 +17,9 @@ public class Bullet : MonoBehaviour
 
     public void Launch()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        damage = playerStats.damage;
         StopAllCoroutines();
         StartCoroutine(MoveAndReturn());
     }
@@ -54,12 +42,15 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-           
+            Debug.Log("¡Colisión con enemigo detectada!");
+
             gameObject.SetActive(false);
 
             enemyHealth enemyHealth = other.GetComponent<enemyHealth>();
             if (enemyHealth != null)
             {
+                Debug.Log($"Aplicando daño: {damage} a {other.name}");
+
                 enemyHealth.TakeDamage(damage);
                 
             }

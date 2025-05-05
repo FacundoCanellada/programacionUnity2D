@@ -24,7 +24,7 @@ public class shooting : MonoBehaviour
            return;
        }
         bulletPool = new GameObject[poolSize];
-        float bulletLifetime = firecooldown * poolSize - 0.01f;
+        float bulletLifetime = firecooldown * poolSize ;
         for (int i = 0; i < poolSize; i++)
         {
             bulletPool[i] = Instantiate(bulletprefab, firepoint.position, firepoint.rotation);

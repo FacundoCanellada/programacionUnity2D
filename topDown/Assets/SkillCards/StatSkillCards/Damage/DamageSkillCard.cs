@@ -5,7 +5,7 @@ public class DamageSkillCard : SkillCard
     public override void ApplySkill()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-
+        GameObject bullet = GameObject.FindGameObjectWithTag("Bullet");
         if (player == null)
         {
             Debug.LogError("No se encontró un GameObject con el tag 'Player'");
@@ -14,13 +14,9 @@ public class DamageSkillCard : SkillCard
 
         
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
-
-            //toma el valor de la vida inicial obtiene el 20% y se lo suma a la vida maxima
-            float ammount = playerStats.startDamage;
-            ammount *= 1.20f;
-            playerStats.damage += ammount;
-            Debug.Log(playerStats.damage);
-        
+        float amount = playerStats.startDamage * 1.2f;
+        playerStats.damage += amount;
+        Debug.Log($"🆙 Daño aumentado: {playerStats.damage}");
      
     }
 }

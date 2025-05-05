@@ -232,7 +232,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dcbf78256baffd4f855a1f410a39dca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthStart: 0
   currentHealth: 100
   maximunHealth: 100
   onDied:
@@ -385,6 +384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 0
   startDamage: 0
+  damage: 0
   startBullets: 0
   startArmor: 0
   startSpeed: 0
