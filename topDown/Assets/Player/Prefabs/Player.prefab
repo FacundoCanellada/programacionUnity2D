@@ -183,7 +183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletprefab: {fileID: 1697561318830058155, guid: 3d9de893ac35c5a4a8961f0eb773e5a5, type: 3}
   firepoint: {fileID: 692198114819119992}
-  poolSize: 5
+  firecooldown: 0
+  poolSize: 10
 --- !u!58 &5869061430502611577
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -385,7 +386,7 @@ MonoBehaviour:
   startHealth: 0
   startDamage: 0
   damage: 0
-  startBullets: 0
+  startfirecooldown: 0
   startArmor: 0
   startSpeed: 0
 --- !u!1 &3658548429364739803
@@ -435,6 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletprefab: {fileID: 1697561318830058155, guid: 3d9de893ac35c5a4a8961f0eb773e5a5, type: 3}
   firepoint: {fileID: 692198114819119992}
+  firecooldown: 0
   poolSize: 5
 --- !u!1 &5097654407887981689
 GameObject:

@@ -4,8 +4,15 @@ using UnityEngine.InputSystem;
 public class playerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float speed;
-
+    public float speed;
+    private void Start()
+    {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        
+        speed = playerStats.startSpeed;
+        
+    }
     private Rigidbody2D rb;
     private Vector2 movementInput;
 

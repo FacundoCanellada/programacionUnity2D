@@ -1,22 +1,27 @@
 using UnityEngine;
 
-public class DamageSkillCard : SkillCard
+public class SpeedSkillCard : SkillCard
 {
     public override void ApplySkill()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
-        GameObject bullet = GameObject.FindGameObjectWithTag("Bullet");
+
         if (player == null)
         {
             Debug.LogError("No se encontró un GameObject con el tag 'Player'");
             return;
         }
 
-        
+        playerMovement movement = player.GetComponent<playerMovement>();
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
-        float amount = playerStats.startDamage * 2f;
-        playerStats.damage += amount;
-        Debug.Log($"🆙 Daño aumentado: {playerStats.damage}");
-     
+        if (movement != null)
+        {
+            movement.speed += playerStats.startSpeed * 0.2f;
+
+        }
+        else
+        {
+            Debug.LogWarning("El objeto con tag 'Player' no tiene el componente 'playerMovement'");
+        }
     }
 }

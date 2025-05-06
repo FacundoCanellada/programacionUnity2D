@@ -49,4 +49,6 @@ MonoBehaviour:
   allAvailableSkills:
   - {fileID: 2799897396813156172, guid: 6b84f9503dea8af4fb4c11377f7983c7, type: 3}
   - {fileID: 7210800408452744676, guid: dbdddf47008b9cc47a1f3987ce0526cd, type: 3}
+  - {fileID: 343260964495360471, guid: 982d0c7f543a7cb4788ee3d440be8649, type: 3}
+  - {fileID: 5012332678895319945, guid: f2b7e425ddb95114ba225bc8f5289c81, type: 3}
   player: {fileID: 2671699002646374585, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}

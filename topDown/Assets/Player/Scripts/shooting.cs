@@ -8,13 +8,20 @@ public class shooting : MonoBehaviour
     public GameObject bulletprefab;
     public Transform firepoint;
     
-    private float firecooldown = 0.25f;
+    [SerializeField] public float firecooldown;//velocidad entre bala y bala
     private float firetimer = 0f;
 
-    public int poolSize = 5;
+    float bulletLifetime ;
+    public int poolSize;
     private GameObject[] bulletPool;
     private void Start()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        PlayerStats playerStats = player.GetComponent<PlayerStats>();
+        
+        firecooldown = playerStats.startfirecooldown;
+        poolSize = 6;//cantidad de balas en juego
+        
        // mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
        mainCam = Camera.main;
        if (bulletprefab == null)
@@ -24,14 +31,8 @@ public class shooting : MonoBehaviour
            return;
        }
         bulletPool = new GameObject[poolSize];
-        float bulletLifetime = firecooldown * poolSize ;
-        for (int i = 0; i < poolSize; i++)
-        {
-            bulletPool[i] = Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
-            bulletPool[i].SetActive(false);
-            bulletPool[i].GetComponent<Bullet>().SetLifetime(bulletLifetime);
-        }
-      
+        
+        SetBulletLife();
     }
 
     private void Update()
@@ -80,6 +81,17 @@ public class shooting : MonoBehaviour
                
         }
         return null;
+    }
+
+    public void SetBulletLife()
+    {
+        bulletLifetime = firecooldown * poolSize;
+        for (int i = 0; i < poolSize; i++)
+        {
+            bulletPool[i] = Instantiate(bulletprefab, firepoint.position, firepoint.rotation);
+            bulletPool[i].SetActive(false);
+            bulletPool[i].GetComponent<Bullet>().SetLifetime(bulletLifetime);
+        }
     }
 
 }
