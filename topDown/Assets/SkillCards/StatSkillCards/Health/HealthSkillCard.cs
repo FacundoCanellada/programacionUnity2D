@@ -18,7 +18,7 @@ public class HealthSkillCard : SkillCard
         {
             //toma el valor de la vida inicial obtiene el 20% y se lo suma a la vida maxima
             float ammount = playerStats.startHealth;
-            ammount *= 0.20f;
+            ammount *= 0.5f;
             health.maximunHealth += ammount ;
             Debug.Log(health.maximunHealth);
             health.onHealthChanged.Invoke();

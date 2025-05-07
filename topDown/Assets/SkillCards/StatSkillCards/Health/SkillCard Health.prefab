@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: Health
-  cardImage: {fileID: 21300000, guid: 7223496736a627e46a7be52f251997a9, type: 3}
+  cardImage: {fileID: -8680126046973960431, guid: 94ac7b69c646031419ed89612bdf739b, type: 3}
   description: +20% Health
   currentLevel: 1
   maxLevel: 5

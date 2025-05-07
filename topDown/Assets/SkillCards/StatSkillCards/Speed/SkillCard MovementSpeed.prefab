@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: Move Speed
-  cardImage: {fileID: 0}
+  cardImage: {fileID: -5447403752590868552, guid: 82fa23ee8c9d9b646b85a330b5c02ec7, type: 3}
   description: +20%Movement Speed
   currentLevel: 1
   maxLevel: 5
