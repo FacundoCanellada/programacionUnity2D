@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardName: Damage
-  cardImage: {fileID: 0}
+  cardImage: {fileID: -4520413206565081784, guid: 4f5ccefc36beaa94d90cead3d335e614, type: 3}
   description: +20% Damage
   currentLevel: 1
   maxLevel: 5

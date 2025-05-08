@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 667a135de36374441afc7ea3db3e1fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardName: Fire Speed
-  cardImage: {fileID: 0}
+  cardName: Attack Speed
+  cardImage: {fileID: -4984892608937354822, guid: bf6c0a7219608b74daef98fc8b7defde, type: 3}
   description: +20% Fire Speed
   currentLevel: 1
   maxLevel: 5
