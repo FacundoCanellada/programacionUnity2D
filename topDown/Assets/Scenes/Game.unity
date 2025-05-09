@@ -1001,6 +1001,10 @@ PrefabInstance:
       propertyPath: invincibilityDuration
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6546777855249270132, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: maximunHealth
       value: 100
@@ -1010,9 +1014,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1822466273}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: onDied.m_PersistentCalls.m_Calls.Array.data[3].m_MethodName
+      value: onPlayerDied
+      objectReference: {fileID: 0}
+    - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: onHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 732487367}
+    - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: onHealthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: updateHealthBar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432084018461842615, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: damage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432084018461842615, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: startSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432084018461842615, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: startDamage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432084018461842615, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: startfirecooldown
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8732479808776858623, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8256405519531360602, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
     - {fileID: 6590871116161792015, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}

@@ -15,5 +15,5 @@ EditorBuildSettings:
     path: Assets/MenuDefeat/DefeatMenu.unity
     guid: 7d384da81cdc6134682bf6432ded2a59
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9bc14e34967f054db2aa3cc732298b9, type: 3}
   m_UseUCBPForAssetBundles: 0

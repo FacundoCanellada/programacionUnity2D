@@ -8,7 +8,7 @@ public class PlayerStats : MonoBehaviour
     public float  startfirecooldown;
     public float startArmor;
     public float startSpeed;
-    void Start()
+    void Awake()
     {
         startHealth = 100f;
         startDamage = 1;
