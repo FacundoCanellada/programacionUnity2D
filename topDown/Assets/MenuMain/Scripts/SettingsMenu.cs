@@ -21,17 +21,23 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
+        HashSet<string> addedResolutions = new HashSet<string>();
 
         int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++) 
         { 
             string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
 
-            if (resolutions[i].width == Screen.currentResolution.width &&
-                resolutions[i].height == Screen.currentResolution.height)
+            if (!addedResolutions.Contains(option))
             {
-                currentResolutionIndex = i;
+                addedResolutions.Add(option);
+                options.Add(option);
+
+                if (resolutions[i].width == Screen.currentResolution.width &&
+                    resolutions[i].height == Screen.currentResolution.height)
+                {
+                    currentResolutionIndex = options.Count - 1; 
+                }
             }
         }
 
