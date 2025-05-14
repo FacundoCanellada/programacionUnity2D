@@ -37,6 +37,8 @@ public class shooting : MonoBehaviour
 
     private void Update()
     {
+        if (PauseMenu.GameIsPaused) return;
+
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
 
