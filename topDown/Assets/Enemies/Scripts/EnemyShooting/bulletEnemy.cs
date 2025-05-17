@@ -7,6 +7,8 @@ public class EnemyBullet : MonoBehaviour
     public float lifetime = 1f;
     [SerializeField] public float damage = 1f;
 
+    private Coroutine activeCoroutine;
+
     public void SetLifetime(float time)
     {
         lifetime = time;
@@ -14,21 +16,25 @@ public class EnemyBullet : MonoBehaviour
 
     public void Launch(Vector3 direction)
     {
-        StopAllCoroutines();
-        StartCoroutine(MoveAndReturn(direction));
+        if (activeCoroutine != null)
+        {
+            StopCoroutine(activeCoroutine);
+        }
+
+        activeCoroutine = StartCoroutine(MoveAndDisable(direction));
     }
 
-    private IEnumerator MoveAndReturn(Vector3 direction)
+    private IEnumerator MoveAndDisable(Vector3 direction)
     {
         float timer = 0f;
         while (timer < lifetime)
         {
-            transform.position += direction * speed * Time.deltaTime;
+            transform.position += direction.normalized * speed * Time.deltaTime;
             timer += Time.deltaTime;
             yield return null;
         }
 
-        gameObject.SetActive(false);
+        DisableBullet();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -41,11 +47,22 @@ public class EnemyBullet : MonoBehaviour
                 playerHealth.takeDamge(damage);
             }
 
-            gameObject.SetActive(false);
+            DisableBullet();
         }
         else if (!other.isTrigger)
         {
-            gameObject.SetActive(false);
+            DisableBullet();
         }
+    }
+
+    private void DisableBullet()
+    {
+        if (activeCoroutine != null)
+        {
+            StopCoroutine(activeCoroutine);
+            activeCoroutine = null;
+        }
+
+        gameObject.SetActive(false);
     }
 }
