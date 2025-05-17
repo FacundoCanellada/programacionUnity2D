@@ -42,21 +42,25 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Debug.Log("¡Colisión con enemigo detectada!");
-
-            gameObject.SetActive(false);
-
             enemyHealth enemyHealth = other.GetComponent<enemyHealth>();
+
             if (enemyHealth != null)
             {
+                if (enemyHealth.IsInvulnerable())
+                {
+                    // Rebote simple: invertir la dirección
+                    transform.right = -transform.right;
+
+                    // Opcional: salís sin destruir la bala ni hacer daño
+                    return;
+                }
+
+                // El enemigo no tiene escudo, aplicamos daño
                 Debug.Log($"Aplicando daño: {damage} a {other.name}");
-
                 enemyHealth.TakeDamage(damage);
-                
+                gameObject.SetActive(false); // destruís la bala solo si hizo daño
             }
-          
-            
-
         }
     }
-}
+
+  }

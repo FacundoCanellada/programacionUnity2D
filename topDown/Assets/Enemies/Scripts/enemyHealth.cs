@@ -3,28 +3,32 @@ using UnityEngine;
 public class enemyHealth : MonoBehaviour
 {
    [SerializeField] private float maxHealth = 30;
-   private float currentHealth;
+   [SerializeField] private float currentHealth;
 
    [Header("XP Drop")]
    [SerializeField] private GameObject xpOrbPrefab;
 
-    [Header("Health Drop")]
-    [SerializeField] private GameObject healthPrefab;
-    [Range(0f, 1f)]
-    [SerializeField] private float healthDropChance = 0.3f;
+   [Header("Health Drop")]
+   [SerializeField] private GameObject healthPrefab;
+   [Range(0f, 1f)]
+   [SerializeField] private float healthDropChance = 0.3f;
+    
+   [SerializeField] private bool isInvulnerable = false;
     void Start()
    {
       currentHealth = maxHealth;
    }
 
    public void TakeDamage(float damage)
-   {
-      
-      currentHealth -= damage;
-    if (currentHealth <= 0)
-      {
-         Die();
-      }
+    {
+        if (isInvulnerable) return;
+
+        currentHealth -= damage;
+
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
    private void Die()
@@ -43,6 +47,16 @@ public class enemyHealth : MonoBehaviour
 
         Destroy(gameObject);
    }
+
+    public void SetInvulnerable(bool value)
+    {
+        isInvulnerable = value;
+    }
+
+    public bool IsInvulnerable()
+    {
+        return isInvulnerable;
+    }
 }
 
  
