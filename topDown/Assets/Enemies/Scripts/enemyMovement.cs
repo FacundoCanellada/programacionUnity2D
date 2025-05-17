@@ -4,18 +4,25 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-
     [SerializeField]
     private float rotationSpeed;
+    [SerializeField] 
+    private bool useZigZag = false;
+    [SerializeField] 
+    private float zigZagFrequency = 5f;
+    [SerializeField] 
+    private float zigZagMagnitude = 0.5f;
 
-    private Rigidbody2D rigidbody;
+    private Rigidbody2D rb;
     private enemyController enemyController;
     private Vector2 targetDirection;
     private float changeDirectionCooldown;
+    private float zigzagTimer;
+    private Vector2 zigzagOffset;
 
     private void Awake()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
         enemyController = GetComponent<enemyController>();
         targetDirection = transform.up;
     }
@@ -59,12 +66,24 @@ public class EnemyMovement : MonoBehaviour
         Quaternion targetRotation = Quaternion.LookRotation(transform.forward,  targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
-        rigidbody.SetRotation(rotation);
+        rb.SetRotation(rotation);
     }
 
     private void setVelocity()
     {
-        rigidbody.linearVelocity = transform.up * speed;
-     
+        Vector2 moveDirection = transform.up;
+
+        if (useZigZag)
+        {
+            zigzagTimer += Time.fixedDeltaTime * zigZagFrequency;
+            Vector2 perpDirection = new Vector2(-moveDirection.y, moveDirection.x); // Perpendicular 2D
+            zigzagOffset = perpDirection * Mathf.Sin(zigzagTimer) * zigZagMagnitude;
+
+            moveDirection += zigzagOffset;
+            moveDirection.Normalize();
+        }
+
+        rb.linearVelocity = moveDirection * speed;
+
     }
 }
