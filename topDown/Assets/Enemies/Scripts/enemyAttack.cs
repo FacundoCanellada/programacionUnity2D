@@ -9,11 +9,11 @@ public class enemyAttack : MonoBehaviour
 
     private float lastDamageTime = -Mathf.Infinity;
 
-    private void OnCollisionStay2D(Collision2D collision)
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (collision.gameObject.GetComponent<playerMovement>())
+        if (other.gameObject.GetComponent<playerMovement>())
         {
-            var health = collision.gameObject.GetComponent<healt>();
+            var health = other.gameObject.GetComponent<healt>();
 
             if (Time.time >= lastDamageTime + damageCooldown)
             {

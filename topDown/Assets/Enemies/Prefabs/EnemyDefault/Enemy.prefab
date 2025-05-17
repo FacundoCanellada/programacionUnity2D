@@ -180,7 +180,7 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -213,6 +213,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 2
+  currentHealth: 0
   xpOrbPrefab: {fileID: 1258233889311955165, guid: 2f6a531d0f6085b4c9b151e031f8d779, type: 3}
   healthPrefab: {fileID: 1931811600529467531, guid: 7b434611d0cb5b94f947ae045df39df9, type: 3}
   healthDropChance: 0.3
+  isInvulnerable: 0
