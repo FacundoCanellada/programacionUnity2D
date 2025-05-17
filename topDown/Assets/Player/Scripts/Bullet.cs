@@ -7,9 +7,9 @@ public class Bullet : MonoBehaviour
     public float speed = 1f;
     public float lifetime = 1f;
     [SerializeField] public float damage;
-    
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool isReflected = false;
+
     public void SetLifetime(float time)
     {
         lifetime = time;
@@ -20,6 +20,7 @@ public class Bullet : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
         damage = playerStats.damage;
+        isReflected = false; // Al lanzar, aseguramos que no esté reflejada
         StopAllCoroutines();
         StartCoroutine(MoveAndReturn());
     }
@@ -37,10 +38,19 @@ public class Bullet : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // Update is called once per frame
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        // 🟥 Si es una bala reflejada y choca con el jugador
+        if (isReflected && other.CompareTag("Player"))
+        {
+            Debug.Log("El jugador ha sido golpeado por una bala reflejada.");
+            other.GetComponent<healt>()?.takeDamge(damage); // Usás 'healt' como sistema de vida
+            gameObject.SetActive(false);
+            return;
+        }
+
+        // 🟩 Si es una bala normal y choca con un enemigo
+        if (!isReflected && other.CompareTag("Enemy"))
         {
             enemyHealth enemyHealth = other.GetComponent<enemyHealth>();
 
@@ -48,19 +58,20 @@ public class Bullet : MonoBehaviour
             {
                 if (enemyHealth.IsInvulnerable())
                 {
-                    // Rebote simple: invertir la dirección
+                    // Rebote
                     transform.right = -transform.right;
+                    isReflected = true;
 
-                    // Opcional: salís sin destruir la bala ni hacer daño
+                    // Opcional: cambiar color de la bala reflejada
+                    //GetComponent<SpriteRenderer>().color = Color.green;
+
                     return;
                 }
 
-                // El enemigo no tiene escudo, aplicamos daño
                 Debug.Log($"Aplicando daño: {damage} a {other.name}");
                 enemyHealth.TakeDamage(damage);
-                gameObject.SetActive(false); // destruís la bala solo si hizo daño
+                gameObject.SetActive(false);
             }
         }
     }
-
-  }
+}
