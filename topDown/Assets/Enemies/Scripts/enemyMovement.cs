@@ -20,6 +20,9 @@ public class EnemyMovement : MonoBehaviour
     private float zigzagTimer;
     private Vector2 zigzagOffset;
 
+    public bool isOverridingMovement { get; set; } = false;
+    public Vector2 externalVelocity = Vector2.zero;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -71,6 +74,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void setVelocity()
     {
+        if (isOverridingMovement)
+        {
+            rb.linearVelocity = externalVelocity;
+            return;
+        }
+
         Vector2 moveDirection = transform.up;
 
         if (useZigZag)
