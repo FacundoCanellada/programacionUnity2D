@@ -32,6 +32,7 @@ public class enemySpawner : MonoBehaviour
 
     void Update()
     {
+        if (gameManager.Instance != null && gameManager.Instance.bossAparecio) return;
         if (player == null) return;
 
         tiempoRestante -= Time.deltaTime;

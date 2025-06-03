@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -37183049952278779}
   - component: {fileID: -1861352561867823450}
   - component: {fileID: 2059354639260777476}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Enemy
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -137,6 +137,7 @@ MonoBehaviour:
   useZigZag: 0
   zigZagFrequency: 5
   zigZagMagnitude: 0.5
+  externalVelocity: {x: 0, y: 0}
 --- !u!114 &6008191006051854467
 MonoBehaviour:
   m_ObjectHideFlags: 0
