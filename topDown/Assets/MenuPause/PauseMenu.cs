@@ -13,6 +13,19 @@ public class PauseMenu : MonoBehaviour
     // Referencia al AudioMixer
     public AudioMixer masterMixer;
 
+    void Start()
+    {
+        // Asegura que el juego no quede pausado al volver a esta escena
+        Time.timeScale = 1f;
+        GameIsPaused = false;
+
+        if (pauseMenuUI != null)
+        {
+            pauseMenuUI.SetActive(false); // Asegura que no se vea
+        }
+    }
+
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
