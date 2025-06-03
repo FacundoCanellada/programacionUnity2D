@@ -37,6 +37,11 @@ public class PauseMenu : MonoBehaviour
 
     public void LoadMenu()
     {
+        if (AudioMenu.Instance != null) // Asegúrate de que tu AudioMenu exista y sea un Singleton
+        {
+            AudioMenu.Instance.PlayMenuMusic();
+        }
+
         SceneManager.LoadScene("MainMenu");
     }
     public void MuteGame()
