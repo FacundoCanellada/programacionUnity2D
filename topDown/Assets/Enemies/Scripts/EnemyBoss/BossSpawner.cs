@@ -62,15 +62,20 @@ public class BossSpawner : MonoBehaviour
 
     private void CrearParedes(Vector3 centro, float anchoZona, float altoZona)
     {
-        float grosor = 1f;
+        float grosor = 1f; // Este es el grosor que quieres para todas las paredes
 
+        // Calculamos las posiciones de los CENTROS de cada pared
+        // El grosor/2f se añade o resta para que el borde exterior de la pared coincida con el límite del área
         Vector3 posIzquierda = centro + new Vector3(-anchoZona / 2f - grosor / 2f, 0, 0);
         Vector3 posDerecha = centro + new Vector3(anchoZona / 2f + grosor / 2f, 0, 0);
         Vector3 posArriba = centro + new Vector3(0, altoZona / 2f + grosor / 2f, 0);
         Vector3 posAbajo = centro + new Vector3(0, -altoZona / 2f - grosor / 2f, 0);
 
-        Vector2 sizeVertical = new Vector2(grosor, altoZona + grosor * 2);
-        Vector2 sizeHorizontal = new Vector2(anchoZona + grosor * 2, grosor);
+        // Dimensiones para los SpriteRenderer y Colliders
+        // Las paredes verticales solo deben tener el 'altoZona' de alto
+        Vector2 sizeVertical = new Vector2(grosor, altoZona);
+        // Las paredes horizontales solo deben tener el 'anchoZona' de ancho
+        Vector2 sizeHorizontal = new Vector2(anchoZona, grosor);
 
         // Izquierda
         GameObject paredIzquierda = Instantiate(wallPrefab, posIzquierda, Quaternion.identity);
@@ -78,6 +83,7 @@ public class BossSpawner : MonoBehaviour
         BoxCollider2D colIzq = paredIzquierda.GetComponent<BoxCollider2D>();
         colIzq.size = sizeVertical;
         colIzq.offset = Vector2.zero;
+        // <--- QUITADA: paredIzquierda.layer = obstacleLayer;
 
         // Derecha
         GameObject paredDerecha = Instantiate(wallPrefab, posDerecha, Quaternion.identity);
@@ -85,6 +91,7 @@ public class BossSpawner : MonoBehaviour
         BoxCollider2D colDer = paredDerecha.GetComponent<BoxCollider2D>();
         colDer.size = sizeVertical;
         colDer.offset = Vector2.zero;
+        // <--- QUITADA: paredDerecha.layer = obstacleLayer;
 
         // Arriba
         GameObject paredArriba = Instantiate(wallPrefab, posArriba, Quaternion.identity);
@@ -92,6 +99,7 @@ public class BossSpawner : MonoBehaviour
         BoxCollider2D colArr = paredArriba.GetComponent<BoxCollider2D>();
         colArr.size = sizeHorizontal;
         colArr.offset = Vector2.zero;
+        // <--- QUITADA: paredArriba.layer = obstacleLayer;
 
         // Abajo
         GameObject paredAbajo = Instantiate(wallPrefab, posAbajo, Quaternion.identity);
@@ -99,5 +107,6 @@ public class BossSpawner : MonoBehaviour
         BoxCollider2D colAba = paredAbajo.GetComponent<BoxCollider2D>();
         colAba.size = sizeHorizontal;
         colAba.offset = Vector2.zero;
+        // <--- QUITADA: paredAbajo.layer = obstacleLayer;
     }
 }
