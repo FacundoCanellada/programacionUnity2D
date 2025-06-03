@@ -16,6 +16,8 @@ public class AudioMenu : MonoBehaviour
 
     private const string MusicVolumeKey = "volume";
     private const string MixerParamName = "volume";
+    private const string MuteKey = "muted";
+    private bool isMuted = false;
 
     void Awake()
     {
@@ -105,20 +107,30 @@ public class AudioMenu : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         Debug.Log($"AudioMenu SetMusicVolume: Intentando establecer volumen a {volume}.");
+
+        PlayerPrefs.SetFloat(MusicVolumeKey, volume);
+        PlayerPrefs.Save();
+
+        if (isMuted)
+        {
+            Debug.Log("AudioMenu SetMusicVolume: Ignorado porque está muteado.");
+            return;
+        }
+
         if (masterMixer != null)
         {
             float mixerVolume = (volume == 0) ? -80f : Mathf.Log10(volume) * 20;
             masterMixer.SetFloat(MixerParamName, mixerVolume);
-            PlayerPrefs.SetFloat(MusicVolumeKey, volume);
-            PlayerPrefs.Save();
-            Debug.Log($"AudioMenu SetMusicVolume: Volumen establecido en Mixer a {mixerVolume}dB. Guardado en PlayerPrefs: {volume}.");
+            Debug.Log($"AudioMenu SetMusicVolume: Volumen establecido en Mixer a {mixerVolume}dB.");
         }
     }
+
 
     private void LoadVolume()
     {
         Debug.Log("AudioMenu LoadVolume: Iniciando carga de volumen...");
         float savedVolume = 0.75f;
+
         if (PlayerPrefs.HasKey(MusicVolumeKey))
         {
             savedVolume = PlayerPrefs.GetFloat(MusicVolumeKey);
@@ -128,16 +140,28 @@ public class AudioMenu : MonoBehaviour
         {
             PlayerPrefs.SetFloat(MusicVolumeKey, savedVolume);
             PlayerPrefs.Save();
-            Debug.Log($"AudioMenu LoadVolume: No se encontró volumen en PlayerPrefs, estableciendo por defecto a {savedVolume} y guardando.");
+            Debug.Log("AudioMenu LoadVolume: No se encontró volumen en PlayerPrefs, usando valor por defecto.");
+        }
+
+        if (PlayerPrefs.HasKey(MuteKey))
+        {
+            isMuted = PlayerPrefs.GetInt(MuteKey) == 1;
         }
 
         if (volumeSlider != null)
         {
             volumeSlider.value = savedVolume;
-            Debug.Log($"AudioMenu LoadVolume: Slider valor actualizado a {savedVolume}.");
         }
-        SetMusicVolume(savedVolume);
-        Debug.Log($"AudioMenu LoadVolume: Llamando a SetMusicVolume con valor cargado: {savedVolume}.");
+
+        if (isMuted)
+        {
+            masterMixer.SetFloat(MixerParamName, -80f);
+            Debug.Log("AudioMenu LoadVolume: Mute activado, volumen en -80dB.");
+        }
+        else
+        {
+            SetMusicVolume(savedVolume);
+        }
     }
 
     public void PlayGameplayMusic()
@@ -171,5 +195,26 @@ public class AudioMenu : MonoBehaviour
             audioSource.Stop();
             Debug.Log("AudioMenu: Música detenida.");
         }
+    }
+
+    public void ToggleMute()
+    {
+        isMuted = !isMuted;
+
+        if (isMuted)
+        {
+            masterMixer.SetFloat(MixerParamName, -80f);
+            Debug.Log("AudioMenu: Mute activado.");
+        }
+        else
+        {
+            float volume = PlayerPrefs.GetFloat(MusicVolumeKey, 0.75f);
+            float mixerVolume = (volume == 0) ? -80f : Mathf.Log10(volume) * 20f;
+            masterMixer.SetFloat(MixerParamName, mixerVolume);
+            Debug.Log($"AudioMenu: Mute desactivado. Volumen restaurado a {mixerVolume} dB.");
+        }
+
+        PlayerPrefs.SetInt(MuteKey, isMuted ? 1 : 0);
+        PlayerPrefs.Save();
     }
 }
