@@ -48,7 +48,6 @@ public class AudioMenu : MonoBehaviour
                 Debug.Log("AudioMenu: Música del menú iniciada en Awake.");
             }
         }
-        Debug.Log("AudioMenu Awake: Fin.");
     }
 
     void OnDestroy()
@@ -75,9 +74,6 @@ public class AudioMenu : MonoBehaviour
     private void FindAndSetupVolumeSlider()
     {
         Debug.Log("AudioMenu FindAndSetupVolumeSlider: Buscando Slider (incluyendo inactivos)...");
-
-        // FindObjectsByType es el reemplazo moderno de FindObjectsOfType.
-        // El segundo parámetro (FindObjectsInactive.Include) es crucial para encontrar objetos inactivos.
         Slider[] allSliders = FindObjectsByType<Slider>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
         if (allSliders.Length > 0)
