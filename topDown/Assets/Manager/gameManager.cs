@@ -3,11 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
-    private float timeToWaitBeforeExit;
-
     //Boss
+    private float timeToWaitBeforeExit;
     public static gameManager Instance { get; private set; }
     public bool bossAparecio { get; private set; } = false;
+
+    //Couunter enemies died
+    public int enemiesDefeated = 0;
 
     private void Awake()
     {
@@ -20,6 +22,12 @@ public class gameManager : MonoBehaviour
             Instance = this;
             DontDestroyOnLoad(gameObject); // Opcional: si querés que persista entre escenas
         }
+    }
+
+    public void EnemyDefeated()
+    {
+        enemiesDefeated++;
+        Debug.Log(enemiesDefeated);
     }
 
     public void NotificarAparicionBoss()

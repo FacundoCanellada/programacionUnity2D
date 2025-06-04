@@ -14,6 +14,7 @@ public class enemyHealth : MonoBehaviour
    [SerializeField] private float healthDropChance = 0.3f;
     
    [SerializeField] private bool isInvulnerable = false;
+    private bool isDead = false;
     void Start()
    {
       currentHealth = maxHealth;
@@ -22,6 +23,7 @@ public class enemyHealth : MonoBehaviour
    public void TakeDamage(float damage)
     {
         if (isInvulnerable) return;
+        if (isDead) return;
 
         currentHealth -= damage;
 
@@ -33,7 +35,10 @@ public class enemyHealth : MonoBehaviour
 
    private void Die()
    {
-      if (xpOrbPrefab != null)
+        if (isDead) return; // Asegura que no se ejecute más de una vez
+        isDead = true;
+
+        if (xpOrbPrefab != null)
       {
          Instantiate(xpOrbPrefab, transform.position, Quaternion.identity);
       }
@@ -44,7 +49,7 @@ public class enemyHealth : MonoBehaviour
             Vector3 dropPosition = transform.position + new Vector3(0.5f, 0, 0);
             Instantiate(healthPrefab, dropPosition, Quaternion.identity);
         }
-
+        gameManager.Instance.EnemyDefeated();
         Destroy(gameObject);
    }
 
