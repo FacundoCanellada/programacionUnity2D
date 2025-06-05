@@ -322,7 +322,7 @@ MonoBehaviour:
   tutorialDescriptionText: {fileID: 1947515508}
   tutorialTitleTextPro: {fileID: 2108912670}
   tutorialImage: {fileID: 490341679}
-  displayDuration: 3
+  displayDuration: 5
   fadeDuration: 1
   tutorialEnabled: 1
 --- !u!1 &320823339 stripped

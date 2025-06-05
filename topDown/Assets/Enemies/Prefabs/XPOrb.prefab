@@ -138,3 +138,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xpAmount: 10
+  tutorialMessageID: FirstXP
+  tutorialDescription: "Has ganado experiencia. Es crucial que mejores tu personaje
+    durante el nivel. Cada vez que subas de nivel podr\xE1s elegir que mejora se
+    acomoda mejor a tu estilo de juego"
+  tutorialTitle: EXPERIENCIA
+  showTutorialOnCollect: 1

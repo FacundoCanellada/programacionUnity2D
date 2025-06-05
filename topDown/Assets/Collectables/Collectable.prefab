@@ -92,6 +92,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47c19795d3b02c5409d2dccacb48bef3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tutorialMessageID: HealthCollectable
+  tutorialDescription: Has obtenido salud. Es escencial que cuides tu vida en los
+    combates. Recoje salud para curarte.
+  tutorialTitle: SALUD
+  showTutorialOnCollect: 1
 --- !u!1 &6674717767592300503
 GameObject:
   m_ObjectHideFlags: 0
