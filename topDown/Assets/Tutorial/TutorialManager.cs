@@ -1,8 +1,8 @@
 using UnityEngine;
-using TMPro; // Necesario para TextMeshPro
-using UnityEngine.UI; // Necesario para Image
+using TMPro; 
+using UnityEngine.UI; 
 using System.Collections;
-using System.Collections.Generic; // Para usar HashSet
+using System.Collections.Generic;
 
 public class TutorialManager : MonoBehaviour
 {
@@ -18,11 +18,10 @@ public class TutorialManager : MonoBehaviour
 
     [Header("Tutorial Settings")]
     public bool tutorialEnabled = true;
-    //public bool pauseGameOnTutorial = true;
     private Coroutine currentTutorialCoroutine;
     private HashSet<string> completedTutorials = new HashSet<string>();
 
-    private GameObject pauseMenuUIRef; // Referencia al GameObject del UI del menú de pausa
+    private GameObject pauseMenuUIRef; 
     private bool wasPauseMenuPreviouslyActive = false;
 
     private void Awake()
@@ -43,7 +42,7 @@ public class TutorialManager : MonoBehaviour
         }
     }
 
-    private void Start() // NUEVO: Obtener la referencia al panel de pausa en Start
+    private void Start() 
     {
         if (PauseMenu.Instance != null && PauseMenu.Instance.pauseMenuUI != null)
         {
@@ -68,13 +67,11 @@ public class TutorialManager : MonoBehaviour
             StartCoroutine(FadeOutPanel());
         }
 
-        // --- MODIFICADO: Deshabilitar input del menú de pausa ---
         if (PauseMenu.Instance != null)
         {
-            PauseMenu.Instance.SetPauseMenuInputEnabled(false); // Deshabilita el input de Escape para el menú
+            PauseMenu.Instance.SetPauseMenuInputEnabled(false); 
         }
 
-        // Ocultar el panel de pausa si estaba activo
         if (pauseMenuUIRef != null && pauseMenuUIRef.activeSelf)
         {
             wasPauseMenuPreviouslyActive = true;
@@ -84,8 +81,6 @@ public class TutorialManager : MonoBehaviour
         {
             wasPauseMenuPreviouslyActive = false;
         }
-
-        // Solicita la pausa al PauseMenu (esto solo gestiona Time.timeScale)
         if (PauseMenu.Instance != null)
         {
             PauseMenu.Instance.RequestPause(true);
@@ -106,7 +101,6 @@ public class TutorialManager : MonoBehaviour
             canvasGroup = tutorialPanel.AddComponent<CanvasGroup>();
         }
 
-        // ... (fade in, asignación de completedTutorials, espera, fade out - todo lo mismo)
 
         canvasGroup.alpha = 0f;
         while (canvasGroup.alpha < 1f)
@@ -135,18 +129,16 @@ public class TutorialManager : MonoBehaviour
         tutorialPanel.SetActive(false);
         currentTutorialCoroutine = null;
 
-        // --- MODIFICADO: Re-habilitar input del menú de pausa ---
         if (PauseMenu.Instance != null)
         {
-            PauseMenu.Instance.RequestPause(false); // Levanta la solicitud de pausa del tutorial
-            PauseMenu.Instance.SetPauseMenuInputEnabled(true); // Re-habilita el input de Escape
+            PauseMenu.Instance.RequestPause(false); 
+            PauseMenu.Instance.SetPauseMenuInputEnabled(true);
         }
 
         if (pauseMenuUIRef != null && wasPauseMenuPreviouslyActive)
         {
             pauseMenuUIRef.SetActive(true); // Re-activa el menú de pausa si lo deshabilitamos
         }
-        // --- FIN MODIFICADO ---
     }
 
     private IEnumerator FadeOutPanel()
@@ -165,7 +157,6 @@ public class TutorialManager : MonoBehaviour
         canvasGroup.alpha = 0f;
         tutorialPanel.SetActive(false);
 
-        // --- MODIFICADO: Re-habilitar input del menú de pausa si se interrumpió ---
         if (PauseMenu.Instance != null)
         {
             PauseMenu.Instance.RequestPause(false);
@@ -176,7 +167,6 @@ public class TutorialManager : MonoBehaviour
         {
             pauseMenuUIRef.SetActive(true);
         }
-        // --- FIN MODIFICADO ---
     }
     public void MarkTutorialComplete(string messageID)
     {

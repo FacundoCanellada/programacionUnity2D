@@ -53,7 +53,7 @@ public class AudioMenu : MonoBehaviour
     void OnDestroy()
     {
         Debug.Log("AudioMenu OnDestroy: Inicio.");
-        SceneManager.sceneLoaded -= OnSceneLoaded; // Corregido: Eliminar la verificación de null
+        SceneManager.sceneLoaded -= OnSceneLoaded; 
         Debug.Log("AudioMenu: Desuscrito de SceneManager.sceneLoaded.");
 
         if (volumeSlider != null)
@@ -70,7 +70,6 @@ public class AudioMenu : MonoBehaviour
         FindAndSetupVolumeSlider();
     }
 
-    // --- CAMBIO CLAVE AQUÍ: FindObjectsByType con FindObjectsInactive.Include ---
     private void FindAndSetupVolumeSlider()
     {
         Debug.Log("AudioMenu FindAndSetupVolumeSlider: Buscando Slider (incluyendo inactivos)...");
