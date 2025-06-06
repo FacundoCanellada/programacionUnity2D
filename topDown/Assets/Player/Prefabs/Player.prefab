@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 6124845378771821863}
   - component: {fileID: 5879832096449744893}
   - component: {fileID: 7432084018461842615}
+  - component: {fileID: -1242568555048409193}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -138,7 +139,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebec03ab1e334ee4aa2a727e991477be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementTutorialID: InitialMovement
+  movementTutorialDescription: Usa las teclas 'W, A, S, D' o el stick izquierdo para
+    moverte por el mundo.
+  movementTutorialTitle: "\xA1Mueve a tu H\xE9roe!"
   speed: 2
+  isKnockedBack: 0
 --- !u!114 &6546777855249270132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +395,18 @@ MonoBehaviour:
   startfirecooldown: 0
   startArmor: 0
   startSpeed: 0
+--- !u!114 &-1242568555048409193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2671699002646374585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c360f679ad553d49b247ce794117490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3658548429364739803
 GameObject:
   m_ObjectHideFlags: 0

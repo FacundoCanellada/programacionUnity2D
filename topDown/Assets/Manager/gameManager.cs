@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class gameManager : MonoBehaviour
 {
     //Boss
-    private float timeToWaitBeforeExit;
+    [SerializeField] private float timeToWaitBeforeExit = 2f;
     public static gameManager Instance { get; private set; }
     public bool bossAparecio { get; private set; } = false;
 
@@ -23,6 +23,12 @@ public class gameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject); // Opcional: si querés que persista entre escenas
         }
     }
+    public void ResetGame()
+    {
+        enemiesDefeated = 0;
+        bossAparecio = false;
+        Debug.Log("GameManager reiniciado.");
+    }
 
     public void EnemyDefeated()
     {
@@ -38,11 +44,30 @@ public class gameManager : MonoBehaviour
 
     public void onPlayerDied()
     {
+        Debug.Log("onPlayerDied llamado");
         Invoke(nameof(endGame), timeToWaitBeforeExit);
     }
 
     private void endGame()
     {
         SceneManager.LoadScene("DefeatMenu");
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "Game")
+        {
+            ResetGame();
+        }
     }
 }

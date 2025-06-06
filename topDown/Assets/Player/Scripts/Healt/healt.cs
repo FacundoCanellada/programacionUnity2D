@@ -6,8 +6,14 @@ public class healt : MonoBehaviour
 {
     [SerializeField] public float currentHealth;
     [SerializeField] public float maximunHealth;
-    
-   
+
+    public bool isInvincible { get; set; }
+
+    public UnityEvent onDied;
+    public UnityEvent onDamaged;
+    public UnityEvent onHealthChanged;
+
+
     private void Start()
     {
         GameObject player = GameObject.FindGameObjectWithTag("Player");
@@ -17,58 +23,43 @@ public class healt : MonoBehaviour
         currentHealth = maximunHealth;
     }
 
+    public void ResetHealth()
+    {
+        currentHealth = maximunHealth;
+        onHealthChanged?.Invoke();
+    }
 
-    public bool isInvincible { get; set; }
-
-    public UnityEvent onDied;
-    public UnityEvent onDamaged;
-    public UnityEvent onHealthChanged;
 
     public void takeDamge(float damgeAmount)
     {
-        if (currentHealth == 0)
-        {
-            return;
-        }
-
-        // if (isInvincible)
-        // {
-        //     return;
-        // }
+        if (currentHealth <= 0) return;
+        if (isInvincible) return;
 
         currentHealth -= damgeAmount;
-
-        onHealthChanged.Invoke();
+        onHealthChanged?.Invoke();
 
         if (currentHealth < 0)
-        {
             currentHealth = 0;
-        }
 
         if (currentHealth == 0)
         {
-            onDied.Invoke();
+            Debug.Log("El jugador murió");
+            onDied?.Invoke();
         }
         else
         {
-            onDamaged.Invoke();
+            onDamaged?.Invoke();
         }
     }
 
     public void addHealth(float amountToAdd)
     {
-        if (currentHealth == maximunHealth)
-        {
-            return;
-        }
+        if (currentHealth == maximunHealth) return;
 
         currentHealth += amountToAdd;
-
-        onHealthChanged.Invoke();
-
         if (currentHealth > maximunHealth)
-        {
             currentHealth = maximunHealth;
-        }
+
+        onHealthChanged?.Invoke();
     }
 }
