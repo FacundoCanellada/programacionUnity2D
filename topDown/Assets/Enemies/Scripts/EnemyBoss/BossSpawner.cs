@@ -13,6 +13,13 @@ public class BossSpawner : MonoBehaviour
     [SerializeField] private float altoZona = 8f;
     [SerializeField] private float grosorPared = 1f;
 
+    [Header("Mensaje de Tutorial del Jefe")]
+    public string bossTutorialID = "BossHasAppeared"; // ID único para el tutorial del jefe
+    [TextArea(3, 5)]
+    public string bossTutorialDescription = "¡Un poderoso enemigo ha aparecido! Prepárate para la batalla.";
+    public string bossTutorialTitle = "¡JEFE FINAL!";
+    public bool showBossTutorial = true;
+
     private float tiempoRestante;
     private bool bossSpawned = false;
     private Transform player;
@@ -57,6 +64,19 @@ public class BossSpawner : MonoBehaviour
         if (gameManager.Instance != null)
         {
             gameManager.Instance.NotificarAparicionBoss();
+        }
+
+        if (showBossTutorial && TutorialManager.Instance != null && !string.IsNullOrEmpty(bossTutorialID))
+        {
+            TutorialManager.Instance.ShowTutorialMessage(
+                bossTutorialID,
+                bossTutorialDescription,
+                bossTutorialTitle
+            );
+        }
+        else if (showBossTutorial && (TutorialManager.Instance == null || string.IsNullOrEmpty(bossTutorialID)))
+        {
+            Debug.LogWarning($"BossSpawner en {gameObject.name}: showBossTutorial es true, pero TutorialManager.Instance es nulo o bossTutorialID está vacío. No se mostrará el tutorial del jefe.", this);
         }
     }
 

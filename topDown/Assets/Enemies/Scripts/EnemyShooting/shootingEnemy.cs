@@ -11,7 +11,7 @@ public class EnemyShooting : MonoBehaviour
     public int poolSize = 5;
     private GameObject[] bulletPool;
 
-    private float bulletLifetime;
+    [SerializeField] private float bulletLifetime;
     private Transform player;
 
     void Start()

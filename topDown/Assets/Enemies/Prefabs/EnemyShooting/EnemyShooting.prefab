@@ -226,8 +226,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 8784406492832712409, guid: 6337e74cd319a5b44a35a945101331bf, type: 3}
   firePoint: {fileID: 2831071307486037371}
-  fireCooldown: 2
-  poolSize: 5
+  fireCooldown: 1
+  poolSize: 3
+  bulletLifetime: 0
 --- !u!4 &9001274174262755155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}

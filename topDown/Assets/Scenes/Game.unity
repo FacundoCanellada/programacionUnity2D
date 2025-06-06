@@ -1304,7 +1304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 0.2905661, g: 0.2905661, b: 0.2905661, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2428,6 +2428,11 @@ MonoBehaviour:
   anchoZona: 24
   altoZona: 12
   grosorPared: 1
+  bossTutorialID: BossHasAppeared
+  bossTutorialDescription: "\xA1Un poderoso enemigo ha aparecido! Prep\xE1rate para
+    la batalla."
+  bossTutorialTitle: "\xA1JEFE FINAL!"
+  showBossTutorial: 1
 --- !u!4 &1891487698
 Transform:
   m_ObjectHideFlags: 0
