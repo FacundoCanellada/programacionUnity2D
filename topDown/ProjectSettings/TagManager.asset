@@ -7,6 +7,8 @@ TagManager:
   - Enemy
   - Bullet
   - Audio
+  - Boss
+  - GameManager
   layers:
   - Default
   - TransparentFX

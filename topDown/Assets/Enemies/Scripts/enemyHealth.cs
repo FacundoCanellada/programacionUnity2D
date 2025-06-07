@@ -2,30 +2,50 @@ using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
 {
-   [SerializeField] private float maxHealth = 30;
-   [SerializeField] private float currentHealth;
+    [Header("Health")]
+    [SerializeField] private float maxHealth = 100f;
+    [SerializeField] private float currentHealth;
 
-   [Header("XP Drop")]
-   [SerializeField] private GameObject xpOrbPrefab;
+    [Header("XP Drop")]
+    [SerializeField] private GameObject xpOrbPrefab;
 
-   [Header("Health Drop")]
-   [SerializeField] private GameObject healthPrefab;
-   [Range(0f, 1f)]
-   [SerializeField] private float healthDropChance = 0.3f;
-    
-   [SerializeField] private bool isInvulnerable = false;
+    [Header("Health Drop")]
+    [SerializeField] private GameObject healthPrefab;
+    [Range(0f, 1f)]
+    [SerializeField] private float healthDropChance = 0.3f;
+
+    [Header("Estado")]
+    [SerializeField] private bool isInvulnerable = false;
     private bool isDead = false;
-    void Start()
-   {
-      currentHealth = maxHealth;
-   }
 
-   public void TakeDamage(float damage)
+    [Header("Pantalla de Victoria")]
+    [SerializeField] private VictoryScreenManager victoryManagerInstance;
+
+    void Awake()
     {
-        if (isInvulnerable) return;
-        if (isDead) return;
+        // Si no se asignó manualmente por Inspector, buscá en la escena
+        if (victoryManagerInstance == null)
+        {
+            victoryManagerInstance = FindObjectOfType<VictoryScreenManager>();
+        }
+
+        if (victoryManagerInstance == null)
+        {
+            Debug.LogError("No se encontró VictoryScreenManager en la escena.");
+        }
+    }
+
+    void Start()
+    {
+        currentHealth = maxHealth;
+    }
+
+    public void TakeDamage(float damage)
+    {
+        if (isInvulnerable || isDead) return;
 
         currentHealth -= damage;
+        Debug.Log($"[{gameObject.name}] recibió {damage} de daño. Vida restante: {currentHealth}");
 
         if (currentHealth <= 0)
         {
@@ -33,25 +53,40 @@ public class enemyHealth : MonoBehaviour
         }
     }
 
-   private void Die()
-   {
-        if (isDead) return; // Asegura que no se ejecute más de una vez
+    private void Die()
+    {
+        if (isDead) return;
         isDead = true;
 
+        if (gameObject.CompareTag("Boss"))
+        {
+            Debug.Log("¡El Boss ha muerto! Activando pantalla de victoria.");
+
+            if (victoryManagerInstance != null)
+            {
+                victoryManagerInstance.OnBossDeath();
+            }
+            else
+            {
+                Debug.LogError("VictoryScreenManager no está disponible. No se puede activar la pantalla de victoria.");
+            }
+        }
+
         if (xpOrbPrefab != null)
-      {
-         Instantiate(xpOrbPrefab, transform.position, Quaternion.identity);
-      }
+        {
+            Instantiate(xpOrbPrefab, transform.position, Quaternion.identity);
+        }
 
         if (healthPrefab != null && Random.value <= healthDropChance)
         {
-            // Pod�s cambiar la posici�n si quer�s que no se superpongan
             Vector3 dropPosition = transform.position + new Vector3(0.5f, 0, 0);
             Instantiate(healthPrefab, dropPosition, Quaternion.identity);
         }
-        gameManager.Instance.EnemyDefeated();
+
+        gameManager.Instance?.EnemyDefeated(); // Evita errores si no hay GameManager en escena
+
         Destroy(gameObject);
-   }
+    }
 
     public void SetInvulnerable(bool value)
     {
@@ -64,4 +99,4 @@ public class enemyHealth : MonoBehaviour
     }
 }
 
- 
+

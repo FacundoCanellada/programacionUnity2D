@@ -50,7 +50,7 @@ public class Bullet : MonoBehaviour
         }
 
         // 🟩 Si es una bala normal y choca con un enemigo
-        if (!isReflected && other.CompareTag("Enemy"))
+        if (!isReflected && (other.CompareTag("Enemy") || other.CompareTag("Boss")))
         {
             enemyHealth enemyHealth = other.GetComponent<enemyHealth>();
 

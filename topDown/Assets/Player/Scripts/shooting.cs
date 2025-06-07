@@ -72,6 +72,12 @@ public class shooting : MonoBehaviour
     private void Update()
     {
         if (PauseMenu.GameIsPaused) return;
+        if (VictoryScreenManager.isGamePaused)
+        {
+            // Si el juego está pausado por la pantalla de victoria,
+            // no procesar ningún input de disparo o rotación.
+            return; // Salir del método Update
+        }
 
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
