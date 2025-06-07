@@ -1,0 +1,1334 @@
+fileFormatVersion: 2
+guid: f07247829b7e5f040807e944b381d5b1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 366249828472123764
+    second: Anim_Dead_Main_0
+  - first:
+      213: -9133941325717616551
+    second: Anim_Dead_Main_1
+  - first:
+      213: -8917667187044794753
+    second: Anim_Dead_Main_2
+  - first:
+      213: 973686827655573894
+    second: Anim_Dead_Main_3
+  - first:
+      213: 7920970965795950574
+    second: Anim_Dead_Main_4
+  - first:
+      213: -2462139070220645667
+    second: Anim_Dead_Main_5
+  - first:
+      213: 382414765003057622
+    second: Anim_Dead_Main_6
+  - first:
+      213: 8804816154594037162
+    second: Anim_Dead_Main_7
+  - first:
+      213: 3409375451095520072
+    second: Anim_Dead_Main_8
+  - first:
+      213: 367927015959134942
+    second: Anim_Dead_Main_9
+  - first:
+      213: 5463980766501590422
+    second: Anim_Dead_Main_10
+  - first:
+      213: -3804261843549092239
+    second: Anim_Dead_Main_11
+  - first:
+      213: 6556335921621169442
+    second: Anim_Dead_Main_12
+  - first:
+      213: 5216441707559665170
+    second: Anim_Dead_Main_13
+  - first:
+      213: -1267994221424062834
+    second: Anim_Dead_Main_14
+  - first:
+      213: -3955943899638993741
+    second: Anim_Dead_Main_15
+  - first:
+      213: 7775084847686569930
+    second: Anim_Dead_Main_16
+  - first:
+      213: -5253648414114450254
+    second: Anim_Dead_Main_17
+  - first:
+      213: -3721009408325623754
+    second: Anim_Dead_Main_18
+  - first:
+      213: -1823125226090471803
+    second: Anim_Dead_Main_19
+  - first:
+      213: -6311447983737059148
+    second: Anim_Dead_Main_20
+  - first:
+      213: -5263796844143326307
+    second: Anim_Dead_Main_21
+  - first:
+      213: -6994549173031310757
+    second: Anim_Dead_Main_22
+  - first:
+      213: -4861087949152070986
+    second: Anim_Dead_Main_23
+  - first:
+      213: -6952140491999643642
+    second: Anim_Dead_Main_24
+  - first:
+      213: 7764980149723794943
+    second: Anim_Dead_Main_25
+  - first:
+      213: -4588552940895203149
+    second: Anim_Dead_Main_26
+  - first:
+      213: -6472321289360671584
+    second: Anim_Dead_Main_27
+  - first:
+      213: -1228586365326366388
+    second: Anim_Dead_Main_28
+  - first:
+      213: 8540026922661675714
+    second: Anim_Dead_Main_29
+  - first:
+      213: -5190118197675824107
+    second: Anim_Dead_Main_30
+  - first:
+      213: 4630717669215069775
+    second: Anim_Dead_Main_31
+  - first:
+      213: -4139462231189709154
+    second: Anim_Dead_Main_32
+  - first:
+      213: 7743354452900723442
+    second: Anim_Dead_Main_33
+  - first:
+      213: -8540989152899354643
+    second: Anim_Dead_Main_34
+  - first:
+      213: -3546269586973400774
+    second: Anim_Dead_Main_35
+  - first:
+      213: 2872821182414996286
+    second: Anim_Dead_Main_36
+  - first:
+      213: -2862477331458880402
+    second: Anim_Dead_Main_37
+  - first:
+      213: 8380528751359424055
+    second: Anim_Dead_Main_38
+  - first:
+      213: -4222146105043966664
+    second: Anim_Dead_Main_39
+  - first:
+      213: -7131945390745186131
+    second: Anim_Dead_Main_40
+  - first:
+      213: 375607260873592502
+    second: Anim_Dead_Main_41
+  - first:
+      213: 839609878674648054
+    second: Anim_Dead_Main_42
+  - first:
+      213: -8560226019312977217
+    second: Anim_Dead_Main_43
+  - first:
+      213: 3666004722273088053
+    second: Anim_Dead_Main_44
+  - first:
+      213: -2962068558397157221
+    second: Anim_Dead_Main_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_Dead_Main_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83875c0c932f9af48abe2852b1d2e39d
+      internalID: 116268826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c376cc90919e3498ac51b2161c26ae
+      internalID: -1831241166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad9259548928c44f8850d9bd8887524
+      internalID: -1157053533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e3f3a18fe038ce488daba37a8dcd238
+      internalID: 585893469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbf434597e354741aa0ceb093368b23
+      internalID: -204066854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dbdf7f8f11e6346b9d4d164536f8fd
+      internalID: -1292000521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e61f7b4ce00c364db2f2873798c3fdf
+      internalID: -1162531523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1792
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9647b94fd39d5fb47938246df510b10c
+      internalID: 1497626892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e4d969795537c044a2a010ef5fefbcf
+      internalID: -1533659850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eda8a439d798045a6ff878f7a4c13e
+      internalID: -616779914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36eb5f8bdf26f1549a0dc6711ab7d4bd
+      internalID: 1012639230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa4cbdc9e81c894d9ddadd0f27f044b
+      internalID: 1994786170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c82d55b20ae9044baef9ead63735e1
+      internalID: 95733457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df408dcdd280a484d8ff5ce2c36d0946
+      internalID: -638092055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9a5eb5a31c6f141a6c8f4a9ac87ca7
+      internalID: 65049792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_15
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1536
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaa4410cf5ea2fc44bf0d5670b61541b
+      internalID: 250567993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85280992132daff4795d962a3faaa36e
+      internalID: -940083767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_17
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94c98f7b3ca5fd44bb20a6094781863
+      internalID: 1616495941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_18
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 194778f078cb633409272cbd7254bce4
+      internalID: -1657379523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_19
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97468200b360f45855d72190456aaa
+      internalID: 945638670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_20
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc184b4688ef0846838845c72495b2e
+      internalID: -243100001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f243e0e21a227e346a437a33c2d29ffb
+      internalID: 486630368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_22
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c159c2951235e149a437b6ca184cda0
+      internalID: -1198300232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_23
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1275
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82ec84c5cf30b749baaef8938901f85
+      internalID: -1923157700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5df0a956a145f4db5bd3d04d66ef70
+      internalID: 1999857047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f8b546cc8b086409d4a6719ee9e84a
+      internalID: -311359664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf0ccfcc4eed3e749929c6d2eb8f68c3
+      internalID: -1388049309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ebe90deb8317844d837148718c7d526
+      internalID: 2116592220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16f74b9a4ac8e244dbd349287bfd4b37
+      internalID: 1338528479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a2cc316aa5f7548af43eeb8523f967
+      internalID: 580742103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_30
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7fb47a9f43df44493f323903cc3ee1
+      internalID: 210450988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_31
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1012
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed35efa8b1aa9d2429654527ea46f066
+      internalID: 417194113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3133fc63990a4844bb288208be1a9dd2
+      internalID: 275527330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0180a0bf623b8748b000290a6b91b8a
+      internalID: -865773673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_34
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15e662c0f16f7145a3841ce11bffb57
+      internalID: 858492290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_35
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c4eb0bb7495f54080406b661582121
+      internalID: -1340080205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_36
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cccf590961ee7643b22ebdfafddf3b0
+      internalID: 668194204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_37
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9f8de5b7fdbc07459bc5128970493c0
+      internalID: 2068195712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_38
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e887968baf05719458b967a3ae8bae55
+      internalID: -759830673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_39
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 748
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373c243021bad35479c62fa5e3405fc0
+      internalID: -560158304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debec1f0c04add6499c6736d9c8014dd
+      internalID: 1181270577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_41
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777369f12d3ded8438ecd035defa27c9
+      internalID: 954416163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_42
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3b367029aecdb4e925f5695bce8a6c
+      internalID: -778626146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_43
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c84d3e6a67ab904c80a283d0f6d4c8f
+      internalID: -402954589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_44
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e26fb2dfe913ed9458550848d5fa621a
+      internalID: 1701158932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_Dead_Main_45
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 486
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dceab85cb3bf504880e1429196de8c4
+      internalID: 235459087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5cadfd822cd0e2a4f84cc0111ea8c18c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_Dead_Main_0: 116268826
+      Anim_Dead_Main_1: -1831241166
+      Anim_Dead_Main_10: 1012639230
+      Anim_Dead_Main_11: 1994786170
+      Anim_Dead_Main_12: 95733457
+      Anim_Dead_Main_13: -638092055
+      Anim_Dead_Main_14: 65049792
+      Anim_Dead_Main_15: 250567993
+      Anim_Dead_Main_16: -940083767
+      Anim_Dead_Main_17: 1616495941
+      Anim_Dead_Main_18: -1657379523
+      Anim_Dead_Main_19: 945638670
+      Anim_Dead_Main_2: -1157053533
+      Anim_Dead_Main_20: -243100001
+      Anim_Dead_Main_21: 486630368
+      Anim_Dead_Main_22: -1198300232
+      Anim_Dead_Main_23: -1923157700
+      Anim_Dead_Main_24: 1999857047
+      Anim_Dead_Main_25: -311359664
+      Anim_Dead_Main_26: -1388049309
+      Anim_Dead_Main_27: 2116592220
+      Anim_Dead_Main_28: 1338528479
+      Anim_Dead_Main_29: 580742103
+      Anim_Dead_Main_3: 585893469
+      Anim_Dead_Main_30: 210450988
+      Anim_Dead_Main_31: 417194113
+      Anim_Dead_Main_32: 275527330
+      Anim_Dead_Main_33: -865773673
+      Anim_Dead_Main_34: 858492290
+      Anim_Dead_Main_35: -1340080205
+      Anim_Dead_Main_36: 668194204
+      Anim_Dead_Main_37: 2068195712
+      Anim_Dead_Main_38: -759830673
+      Anim_Dead_Main_39: -560158304
+      Anim_Dead_Main_4: -204066854
+      Anim_Dead_Main_40: 1181270577
+      Anim_Dead_Main_41: 954416163
+      Anim_Dead_Main_42: -778626146
+      Anim_Dead_Main_43: -402954589
+      Anim_Dead_Main_44: 1701158932
+      Anim_Dead_Main_45: 235459087
+      Anim_Dead_Main_46: 574601933
+      Anim_Dead_Main_47: -167689567
+      Anim_Dead_Main_48: -1861287096
+      Anim_Dead_Main_49: -385059662
+      Anim_Dead_Main_5: -1292000521
+      Anim_Dead_Main_50: 1727236693
+      Anim_Dead_Main_51: -1222163068
+      Anim_Dead_Main_52: 2137753481
+      Anim_Dead_Main_53: -982177949
+      Anim_Dead_Main_6: -1162531523
+      Anim_Dead_Main_7: 1497626892
+      Anim_Dead_Main_8: -1533659850
+      Anim_Dead_Main_9: -616779914
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
