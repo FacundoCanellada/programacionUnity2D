@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using System.Collections.Generic;
 
@@ -15,21 +16,16 @@ public class shooting : MonoBehaviour
     float bulletLifetime;
     public int poolSize;
     private GameObject[] bulletPool;
+    
+    public Transform brazo;
+    private Animator animator;
 
     // AÑADE ESTA REFERENCIA AL SPRITERENDERER
-    private SpriteRenderer playerSpriteRenderer;
+   
 
     private void Start()
     {
-        // Obtener la referencia al SpriteRenderer que está en PlayerSprite (donde está este script)
-        playerSpriteRenderer = GetComponent<SpriteRenderer>();
-        if (playerSpriteRenderer == null)
-        {
-            Debug.LogError("SpriteRenderer no encontrado en " + gameObject.name + ". Asegúrate de que PlayerSprite tenga un SpriteRenderer.");
-            this.enabled = false;
-            return;
-        }
-
+        animator = transform.Find("Brazo").GetComponent<Animator>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -72,42 +68,39 @@ public class shooting : MonoBehaviour
     private void Update()
     {
         if (PauseMenu.GameIsPaused) return;
-        if (VictoryScreenManager.isGamePaused)
-        {
-            // Si el juego está pausado por la pantalla de victoria,
-            // no procesar ningún input de disparo o rotación.
-            return; // Salir del método Update
-        }
+        if (VictoryScreenManager.isGamePaused) return;
 
         mousePos = mainCam.ScreenToWorldPoint(Input.mousePosition);
         mousePos.z = 0f;
 
-        // Calcula la dirección del mouse en relación con el PlayerSprite (donde está este script)
-        Vector3 directionToMouse = mousePos - transform.position;
+        // 🔁 ROTAR EL BRAZO hacia el mouse
+        Vector3 direction = mousePos - brazo.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+         
 
-        // **LÓGICA PARA VOLTEAR EL SPRITE (Izquierda/Derecha):**
-        // SOLO usamos flipX para la rotación visual del sprite.
-        if (playerSpriteRenderer != null)
+        // ↔️ VOLTEAR el PlayerRoot según la dirección del mouse
+        Vector3 directionToMouse = mousePos - transform.position;
+        Vector3 playerScale = transform.parent.localScale;
+
+        if (directionToMouse.x > 0)
         {
-            if (directionToMouse.x > 0)
-            {
-                playerSpriteRenderer.flipX = true; // El sprite mira hacia la derecha
-            }
-            else if (directionToMouse.x < 0)
-            {
-                playerSpriteRenderer.flipX = false; // El sprite mira hacia la izquierda (volteado)
-            }
+            // El mouse está a la derecha → VOLTEAR
+            playerScale.x = -Mathf.Abs(playerScale.x);
+            brazo.rotation = Quaternion.Euler(0f, 0f, angle);
+        }
+        else if (directionToMouse.x < 0)
+        {
+            // El mouse está a la izquierda → sin voltear
+            playerScale.x = Mathf.Abs(playerScale.x);
+            brazo.rotation = Quaternion.Euler(0f, 0f, angle+180f);
         }
 
-        // MUY IMPORTANTE: Asegúrate de que el transform.rotation del PlayerSprite
-        // permanezca en su orientación por defecto (ej. 0,0,0) para que flipX funcione correctamente.
-        // Si tienes animaciones que esperan una rotación específica, ajústala aquí.
-        // Lo más común es mantenerlo en 0,0,0 para que flipX haga todo el trabajo.
+        transform.parent.localScale = playerScale;
+
+        // ❗ Asegurarse de que este GameObject no rote
         transform.rotation = Quaternion.Euler(0, 0, 0);
 
-
         firetimer += Time.deltaTime;
-
         if (firetimer >= firecooldown)
         {
             Fire();
@@ -136,13 +129,20 @@ public class shooting : MonoBehaviour
             Bullet bulletComponent = bullet.GetComponent<Bullet>();
             if (bulletComponent != null)
             {
-                bulletComponent.Launch();
+                animator.SetTrigger("shootTrigger");
+                
+                StartCoroutine(LaunchWithDelay(bulletComponent, 0.1f));
             }
             else
             {
                 Debug.LogWarning("El prefab de la bala no tiene un componente 'Bullet'.");
             }
         }
+    }
+    private IEnumerator LaunchWithDelay(Bullet bullet, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        bullet.Launch();
     }
 
     GameObject GetAvaibleBullet()

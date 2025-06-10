@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class playerMovement : MonoBehaviour
 {
     [Header("Tutorial - Movement")]
-    public string movementTutorialID = "InitialMovement"; // ID único para este tutorial
-    [TextArea(3, 5)] // Esto te da un campo de texto más grande en el Inspector para el mensaje
+    public string movementTutorialID = "InitialMovement"; // ID ï¿½nico para este tutorial
+    [TextArea(3, 5)] // Esto te da un campo de texto mï¿½s grande en el Inspector para el mensaje
     public string movementTutorialDescription = "Usa las teclas 'W, A, S, D' o el stick izquierdo para moverte por el mundo.";
-    public string movementTutorialTitle = "¡Mueve a tu Héroe!";
+    public string movementTutorialTitle = "ï¿½Mueve a tu Hï¿½roe!";
     private bool hasShownMovementTutorial = false;
 
     [Header("Setting Movement")]
@@ -18,10 +19,14 @@ public class playerMovement : MonoBehaviour
     // Knockback
     public bool isKnockedBack = false;
     private float knockbackTimer = 0f;
+    
+    private Animator animator;
+
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = transform.Find("PlayerSprite").GetComponent<Animator>();
     }
 
     private void Start()
@@ -55,22 +60,27 @@ public class playerMovement : MonoBehaviour
     private void OnMove(InputValue inputValue)
     {
         movementInput = inputValue.Get<Vector2>();
+        bool currentlyMoving = movementInput.magnitude > 0.1f;
+        
+        animator.SetBool("IsRunning", currentlyMoving);
+        
+
 
         if (!hasShownMovementTutorial && TutorialManager.Instance != null && movementInput.magnitude > 0)
         {
             // Muestra el mensaje de tutorial usando el TutorialManager
             TutorialManager.Instance.ShowTutorialMessage(movementTutorialID, movementTutorialDescription, movementTutorialTitle);
 
-            hasShownMovementTutorial = true; // Marca que ya se mostró para esta sesión de juego
+            hasShownMovementTutorial = true; // Marca que ya se mostrï¿½ para esta sesiï¿½n de juego
 
             // Opcional: Si quieres que el estado del tutorial persista entre escenas o sesiones de juego,
-            // descomenta las siguientes líneas y asegúrate de que SaveTutorialProgress esté implementado en TutorialManager.
+            // descomenta las siguientes lï¿½neas y asegï¿½rate de que SaveTutorialProgress estï¿½ implementado en TutorialManager.
             // TutorialManager.Instance.MarkTutorialComplete(movementTutorialID);
             // TutorialManager.Instance.SaveTutorialProgress(); // Guarda el progreso inmediatamente si es necesario
         }
     }
 
-    // Método público para activar knockback
+    // Mï¿½todo pï¿½blico para activar knockback
     public void ApplyKnockback(float duration)
     {
         isKnockedBack = true;
