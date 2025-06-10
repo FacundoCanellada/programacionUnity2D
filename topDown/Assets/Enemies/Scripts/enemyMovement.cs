@@ -6,11 +6,11 @@ public class EnemyMovement : MonoBehaviour
     private float speed;
     [SerializeField]
     private float rotationSpeed;
-    [SerializeField] 
+    [SerializeField]
     private bool useZigZag = false;
-    [SerializeField] 
+    [SerializeField]
     private float zigZagFrequency = 5f;
-    [SerializeField] 
+    [SerializeField]
     private float zigZagMagnitude = 0.5f;
 
     private Rigidbody2D rb;
@@ -28,14 +28,15 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         enemyController = GetComponent<enemyController>();
-        targetDirection = transform.up;
         animator = GetComponent<Animator>();
+        targetDirection = Vector2.up;
     }
     private void FixedUpdate()
     {
         updateTargetDirection();
-        rotateTowardsTarget();
+        //rotateTowardsTarget();
         setVelocity();
+        applySeparationForce();
     }
 
     private void updateTargetDirection()
@@ -60,15 +61,12 @@ public class EnemyMovement : MonoBehaviour
 
     private void handlePlayerTargeting()
     {
-        if (enemyController.awareOfPlayer)
-        {
-            targetDirection = enemyController.directionToPlayer;
-        }
+        targetDirection = enemyController.directionToPlayer;
     }
 
     private void rotateTowardsTarget()
     {
-        Quaternion targetRotation = Quaternion.LookRotation(transform.forward,  targetDirection);
+        Quaternion targetRotation = Quaternion.LookRotation(transform.forward, targetDirection);
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
         rb.SetRotation(rotation);
@@ -79,26 +77,48 @@ public class EnemyMovement : MonoBehaviour
         if (isOverridingMovement)
         {
             rb.linearVelocity = externalVelocity;
-            animator.SetBool("Walk?", externalVelocity != Vector2.zero);
+            if (animator != null)
+                animator.SetBool("Walk?", externalVelocity != Vector2.zero);
             return;
         }
 
-        Vector2 moveDirection = transform.up;
+        Vector2 moveDirection = targetDirection.normalized;
 
         if (useZigZag)
         {
             zigzagTimer += Time.fixedDeltaTime * zigZagFrequency;
-            Vector2 perpDirection = new Vector2(-moveDirection.y, moveDirection.x); // Perpendicular 2D
+            Vector2 perpDirection = new Vector2(-moveDirection.y, moveDirection.x); // perpendicular
             zigzagOffset = perpDirection * Mathf.Sin(zigzagTimer) * zigZagMagnitude;
-
             moveDirection += zigzagOffset;
             moveDirection.Normalize();
         }
 
         Vector2 velocity = moveDirection * speed;
         rb.linearVelocity = velocity;
-        
-        animator.SetBool("Walk?", velocity != Vector2.zero);
+
+        if (animator != null)
+            animator.SetBool("Walk?", velocity != Vector2.zero);
+    }
+
+    private void applySeparationForce()
+    {
+        Collider2D[] nearbyEnemies = Physics2D.OverlapCircleAll(transform.position, 1f, LayerMask.GetMask("Enemy"));
+        Vector2 repulsion = Vector2.zero;
+
+        foreach (var other in nearbyEnemies)
+        {
+            if (other.gameObject != this.gameObject)
+            {
+                Vector2 away = (Vector2)(transform.position - other.transform.position);
+                if (away.magnitude > 0.01f)
+                    repulsion += away.normalized / away.magnitude;
+            }
+        }
+
+        if (repulsion != Vector2.zero)
+        {
+            rb.AddForce(repulsion * 5f); // Puedes ajustar la fuerza según necesidad
+        }
 
     }
 }

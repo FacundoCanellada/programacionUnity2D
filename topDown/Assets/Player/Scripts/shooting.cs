@@ -116,33 +116,26 @@ public class shooting : MonoBehaviour
         {
             bullet.transform.position = firepoint.position;
 
-            // Calculamos la dirección real del mouse desde el firepoint para la bala
             Vector3 directionForBullet = mousePos - firepoint.position;
-            directionForBullet.z = 0; // Aseguramos que la bala vuele en el plano 2D
-
-            // Calculamos la rotación de la bala para que apunte 360 grados
+            directionForBullet.z = 0;
             float bulletRotZ = Mathf.Atan2(directionForBullet.y, directionForBullet.x) * Mathf.Rad2Deg;
             bullet.transform.rotation = Quaternion.Euler(0, 0, bulletRotZ);
 
-            bullet.SetActive(true);
+            bullet.SetActive(true); // Activar la bala primero
 
-            Bullet bulletComponent = bullet.GetComponent<Bullet>();
-            if (bulletComponent != null)
-            {
-                animator.SetTrigger("shootTrigger");
-                
-                StartCoroutine(LaunchWithDelay(bulletComponent, 0.1f));
-            }
-            else
-            {
-                Debug.LogWarning("El prefab de la bala no tiene un componente 'Bullet'.");
-            }
+            animator.SetTrigger("shootTrigger");
+
+            // Iniciar corutina con pequeño delay para evitar error
+            StartCoroutine(DelayedLaunch(bullet.GetComponent<Bullet>(), 0.01f));
         }
     }
-    private IEnumerator LaunchWithDelay(Bullet bullet, float delay)
+    private IEnumerator DelayedLaunch(Bullet bullet, float delay)
     {
         yield return new WaitForSeconds(delay);
-        bullet.Launch();
+        if (bullet != null && bullet.gameObject.activeInHierarchy)
+        {
+            bullet.Launch();
+        }
     }
 
     GameObject GetAvaibleBullet()

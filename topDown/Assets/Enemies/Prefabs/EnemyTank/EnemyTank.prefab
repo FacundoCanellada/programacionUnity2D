@@ -164,6 +164,10 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Color.b
       value: 1
       objectReference: {fileID: 0}
@@ -175,12 +179,17 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8474351992518867262, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Name
       value: EnemyTank
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5374701063033729241, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       insertIndex: -1
