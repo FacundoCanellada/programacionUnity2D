@@ -23,11 +23,13 @@ public class EnemyMovement : MonoBehaviour
     public bool isOverridingMovement { get; set; } = false;
     public Vector2 externalVelocity = Vector2.zero;
 
+    private Animator animator;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         enemyController = GetComponent<enemyController>();
         targetDirection = transform.up;
+        animator = GetComponent<Animator>();
     }
     private void FixedUpdate()
     {
@@ -77,6 +79,7 @@ public class EnemyMovement : MonoBehaviour
         if (isOverridingMovement)
         {
             rb.linearVelocity = externalVelocity;
+            animator.SetBool("Walk?", externalVelocity != Vector2.zero);
             return;
         }
 
@@ -92,7 +95,10 @@ public class EnemyMovement : MonoBehaviour
             moveDirection.Normalize();
         }
 
-        rb.linearVelocity = moveDirection * speed;
+        Vector2 velocity = moveDirection * speed;
+        rb.linearVelocity = velocity;
+        
+        animator.SetBool("Walk?", velocity != Vector2.zero);
 
     }
 }

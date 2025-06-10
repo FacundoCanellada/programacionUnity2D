@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: e608cc02a64c03743935fc3fd76a5f4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8736403760527089525
+    second: EnemyTaqnqRun_0
+  - first:
+      213: -3116580557808521350
+    second: EnemyTaqnqRun_1
+  - first:
+      213: 4489252542213589656
+    second: EnemyTaqnqRun_2
+  - first:
+      213: -6799814985845265966
+    second: EnemyTaqnqRun_3
+  - first:
+      213: 3829072661029956
+    second: EnemyTaqnqRun_4
+  - first:
+      213: 4833047978402558622
+    second: EnemyTaqnqRun_5
+  - first:
+      213: -6571568485643361934
+    second: EnemyTaqnqRun_6
+  - first:
+      213: 4708818328094784430
+    second: EnemyTaqnqRun_7
+  - first:
+      213: 3311711838717102450
+    second: EnemyTaqnqRun_8
+  - first:
+      213: -7620831611231663041
+    second: EnemyTaqnqRun_9
+  - first:
+      213: 3658328122767824682
+    second: EnemyTaqnqRun_10
+  - first:
+      213: 6954693669012442172
+    second: EnemyTaqnqRun_11
+  - first:
+      213: 2496358750976279888
+    second: EnemyTaqnqRun_12
+  - first:
+      213: 3738481051626563506
+    second: EnemyTaqnqRun_13
+  - first:
+      213: 5371816125211631137
+    second: EnemyTaqnqRun_14
+  - first:
+      213: 1222883852246113294
+    second: EnemyTaqnqRun_15
+  - first:
+      213: -6807702420845621850
+    second: EnemyTaqnqRun_16
+  - first:
+      213: -3602637745619841758
+    second: EnemyTaqnqRun_17
+  - first:
+      213: 6485342290614866501
+    second: EnemyTaqnqRun_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b806567311f02c680800000000000000
+      internalID: -8736403760527089525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_1
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7f2fe9be7eafb4d0800000000000000
+      internalID: -3116580557808521350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_2
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a09ade6670d4e30800000000000000
+      internalID: 4489252542213589656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_3
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9a05e1c4432a1a0800000000000000
+      internalID: -6799814985845265966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_4
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 444a7c3758a9d0000800000000000000
+      internalID: 3829072661029956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_5
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e92ba1f978f621340800000000000000
+      internalID: 4833047978402558622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_6
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271631ca7491dc4a0800000000000000
+      internalID: -6571568485643361934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_7
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 3596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab30fd2255195140800000000000000
+      internalID: 4708818328094784430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27940310f5095fd20800000000000000
+      internalID: 3311711838717102450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_9
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3c0877c60e5d3690800000000000000
+      internalID: -7620831611231663041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_10
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a27d5658b0ef4c230800000000000000
+      internalID: 3658328122767824682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_11
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3c052f5b09048060800000000000000
+      internalID: 6954693669012442172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_12
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05501e7ce09d4a220800000000000000
+      internalID: 2496358750976279888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_13
+      rect:
+        serializedVersion: 2
+        x: 2550
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b7eab985b0c1e330800000000000000
+      internalID: 3738481051626563506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_14
+      rect:
+        serializedVersion: 2
+        x: 3060
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e54f50e468c8a40800000000000000
+      internalID: 5371816125211631137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_15
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 3096
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cd0be626e88f010800000000000000
+      internalID: 1222883852246113294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ad0eec87be2681a0800000000000000
+      internalID: -6807702420845621850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_17
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 2596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22d4ae5de0cd00ec0800000000000000
+      internalID: -3602637745619841758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTaqnqRun_18
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2596
+        width: 510
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542dae6d370900a50800000000000000
+      internalID: 6485342290614866501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e617399b596938740a5674a527870eea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnemyTaqnqRun_0: -8736403760527089525
+      EnemyTaqnqRun_1: -3116580557808521350
+      EnemyTaqnqRun_10: 3658328122767824682
+      EnemyTaqnqRun_11: 6954693669012442172
+      EnemyTaqnqRun_12: 2496358750976279888
+      EnemyTaqnqRun_13: 3738481051626563506
+      EnemyTaqnqRun_14: 5371816125211631137
+      EnemyTaqnqRun_15: 1222883852246113294
+      EnemyTaqnqRun_16: -6807702420845621850
+      EnemyTaqnqRun_17: -3602637745619841758
+      EnemyTaqnqRun_18: 6485342290614866501
+      EnemyTaqnqRun_2: 4489252542213589656
+      EnemyTaqnqRun_3: -6799814985845265966
+      EnemyTaqnqRun_4: 3829072661029956
+      EnemyTaqnqRun_5: 4833047978402558622
+      EnemyTaqnqRun_6: -6571568485643361934
+      EnemyTaqnqRun_7: 4708818328094784430
+      EnemyTaqnqRun_8: 3311711838717102450
+      EnemyTaqnqRun_9: -7620831611231663041
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

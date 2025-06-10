@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class enemyHealth : MonoBehaviour
@@ -20,6 +21,7 @@ public class enemyHealth : MonoBehaviour
 
     [Header("Pantalla de Victoria")]
     [SerializeField] private VictoryScreenManager victoryManagerInstance;
+    private Animator animator;
 
     void Awake()
     {
@@ -33,6 +35,7 @@ public class enemyHealth : MonoBehaviour
         {
             Debug.LogError("No se encontró VictoryScreenManager en la escena.");
         }
+        animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -57,7 +60,8 @@ public class enemyHealth : MonoBehaviour
     {
         if (isDead) return;
         isDead = true;
-
+        animator.SetBool("CanMove", false);
+        animator.SetTrigger("Dead");
         if (gameObject.CompareTag("Boss"))
         {
             Debug.Log("¡El Boss ha muerto! Activando pantalla de victoria.");
@@ -84,10 +88,41 @@ public class enemyHealth : MonoBehaviour
         }
 
         gameManager.Instance?.EnemyDefeated(); // Evita errores si no hay GameManager en escena
-
+        DisableAllEnemyScripts();
+        StartCoroutine(DestroyAfterDelay(40F));
+        
+    }
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
         Destroy(gameObject);
     }
+    private void DisableAllEnemyScripts()
+    {
+        BoxCollider2D col = GetComponent<BoxCollider2D>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            rb.isKinematic = true;
+            rb.simulated = false;
+        }
 
+        MonoBehaviour[] allScripts = GetComponents<MonoBehaviour>();
+
+        foreach (MonoBehaviour script in allScripts)
+        {
+            if (script != this) // Evitá desactivar el propio script para poder terminar la lógica
+            {
+                script.enabled = false;
+            }
+        }
+    }
     public void SetInvulnerable(bool value)
     {
         isInvulnerable = value;

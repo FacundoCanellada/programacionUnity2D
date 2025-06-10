@@ -1,0 +1,768 @@
+fileFormatVersion: 2
+guid: 14b43450f0e1abc4394cd3230cf2b1ff
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3975727644979927132
+    second: EnemyTanqDead_0
+  - first:
+      213: 158271799247441583
+    second: EnemyTanqDead_1
+  - first:
+      213: -1795920749820827762
+    second: EnemyTanqDead_2
+  - first:
+      213: 7903838611543481077
+    second: EnemyTanqDead_3
+  - first:
+      213: 7483054883680946937
+    second: EnemyTanqDead_4
+  - first:
+      213: -7975443162113869440
+    second: EnemyTanqDead_5
+  - first:
+      213: 2876623632665726279
+    second: EnemyTanqDead_6
+  - first:
+      213: -2229597356656819526
+    second: EnemyTanqDead_7
+  - first:
+      213: 228585363081804358
+    second: EnemyTanqDead_8
+  - first:
+      213: -6056964582044985721
+    second: EnemyTanqDead_9
+  - first:
+      213: 2868349088827755583
+    second: EnemyTanqDead_10
+  - first:
+      213: -3068989059550314956
+    second: EnemyTanqDead_11
+  - first:
+      213: -382635096993510864
+    second: EnemyTanqDead_12
+  - first:
+      213: 8600656674784422255
+    second: EnemyTanqDead_13
+  - first:
+      213: 2577813508528478258
+    second: EnemyTanqDead_14
+  - first:
+      213: 7515068357651923469
+    second: EnemyTanqDead_15
+  - first:
+      213: -8420993108658707838
+    second: EnemyTanqDead_16
+  - first:
+      213: 8489669763945723946
+    second: EnemyTanqDead_17
+  - first:
+      213: 9219924200249091727
+    second: EnemyTanqDead_18
+  - first:
+      213: 4023436166034369669
+    second: EnemyTanqDead_19
+  - first:
+      213: -3813765623377071724
+    second: EnemyTanqDead_20
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnemyTanqDead_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7654d65c063d8c0800000000000000
+      internalID: -3975727644979927132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_1
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fae0b14ec5b423200800000000000000
+      internalID: 158271799247441583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_2
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e872d2ed79b9317e0800000000000000
+      internalID: -1795920749820827762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_3
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fad013475310bd60800000000000000
+      internalID: 7903838611543481077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_4
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa0e8015c629d760800000000000000
+      internalID: 7483054883680946937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_5
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08972e323b8815190800000000000000
+      internalID: -7975443162113869440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_6
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 3556
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dc881f3f1dbe720800000000000000
+      internalID: 2876623632665726279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab2025c5401ee01e0800000000000000
+      internalID: -2229597356656819526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_8
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64a38573d291c2300800000000000000
+      internalID: 228585363081804358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7861616cdc651fba0800000000000000
+      internalID: -6056964582044985721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_10
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3cc4639c4c6ec720800000000000000
+      internalID: 2868349088827755583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_11
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43e71f5e5b2c865d0800000000000000
+      internalID: -3068989059550314956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_12
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03aca15186b90baf0800000000000000
+      internalID: -382635096993510864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_13
+      rect:
+        serializedVersion: 2
+        x: 3240
+        y: 3016
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f692e9f6dabab5770800000000000000
+      internalID: 8600656674784422255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2381b096abb36c320800000000000000
+      internalID: 2577813508528478258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_15
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d020f90dad2ea4860800000000000000
+      internalID: 7515068357651923469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_16
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 282a26e426f922b80800000000000000
+      internalID: -8420993108658707838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_17
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28fb5c8bad51d570800000000000000
+      internalID: 8489669763945723946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_18
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86efdbf530c3ff70800000000000000
+      internalID: 9219924200249091727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_19
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 2476
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c20fc30ed16d730800000000000000
+      internalID: 4023436166034369669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1936
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb05344e9413eb47905ead1df72fa65
+      internalID: -1899811912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_21
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 1936
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9989ca1694f47d941a50d94283794c8d
+      internalID: -1091400543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_22
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 1936
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90b6fbf97040f74ba9f6d688a6827ce
+      internalID: 520624285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_23
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 1936
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f744a6ca44df6848a612c5e91a8dcea
+      internalID: -386963306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnemyTanqDead_24
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 1936
+        width: 540
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa753c96eda15f49a5f8456e8ef519a
+      internalID: 1095750461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 7119a144b11ef284cafcb3e118c5fba3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnemyTanqDead_0: -3975727644979927132
+      EnemyTanqDead_1: 158271799247441583
+      EnemyTanqDead_10: 2868349088827755583
+      EnemyTanqDead_11: -3068989059550314956
+      EnemyTanqDead_12: -382635096993510864
+      EnemyTanqDead_13: 8600656674784422255
+      EnemyTanqDead_14: 2577813508528478258
+      EnemyTanqDead_15: 7515068357651923469
+      EnemyTanqDead_16: -8420993108658707838
+      EnemyTanqDead_17: 8489669763945723946
+      EnemyTanqDead_18: 9219924200249091727
+      EnemyTanqDead_19: 4023436166034369669
+      EnemyTanqDead_2: -1795920749820827762
+      EnemyTanqDead_20: -1899811912
+      EnemyTanqDead_21: -1091400543
+      EnemyTanqDead_22: 520624285
+      EnemyTanqDead_23: -386963306
+      EnemyTanqDead_24: 1095750461
+      EnemyTanqDead_3: 7903838611543481077
+      EnemyTanqDead_4: 7483054883680946937
+      EnemyTanqDead_5: -7975443162113869440
+      EnemyTanqDead_6: 2876623632665726279
+      EnemyTanqDead_7: -2229597356656819526
+      EnemyTanqDead_8: 228585363081804358
+      EnemyTanqDead_9: -6056964582044985721
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

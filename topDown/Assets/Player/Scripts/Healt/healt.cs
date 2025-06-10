@@ -12,10 +12,11 @@ public class healt : MonoBehaviour
     public UnityEvent onDied;
     public UnityEvent onDamaged;
     public UnityEvent onHealthChanged;
-
+    private Animator animator;
 
     private void Start()
     {
+        animator = transform.Find("PlayerSprite").GetComponent<Animator>();
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         PlayerStats playerStats = player.GetComponent<PlayerStats>();
         
@@ -43,7 +44,7 @@ public class healt : MonoBehaviour
 
         if (currentHealth == 0)
         {
-            Debug.Log("El jugador murió");
+            Debug.Log("El jugador muriï¿½");
             onDied?.Invoke();
         }
         else
