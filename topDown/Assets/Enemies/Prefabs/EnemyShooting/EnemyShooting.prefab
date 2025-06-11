@@ -127,17 +127,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4837474669646524072, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: -37183049952278779, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Radius
+      value: 0.35
+      objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -179,18 +187,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3880248111896795797, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1442162832763454199, guid: f04e720627a34f04585fa2d18a3774be, type: 3}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Color.b
-      value: 0.96981126
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Color.g
-      value: 0.14075248
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Color.r
-      value: 0.020128137
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5752285015299947338, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8d298e69feb28cc4688f60778a3748f4, type: 2}
     - target: {fileID: 8474351992518867262, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Name
       value: EnemyShooting

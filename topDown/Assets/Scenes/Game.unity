@@ -2317,7 +2317,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5397250502197702944, guid: b9d622c912ec5da40a8632103fef4bac, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3691,7 +3691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: onDied.m_PersistentCalls.m_Calls.Array.size
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7417293741053083661, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
       propertyPath: onDied.m_PersistentCalls.m_Calls.Array.data[3].m_Mode
