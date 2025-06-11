@@ -9,9 +9,8 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] public AudioMixer audioMixer;
     [SerializeField] public Slider musicSilder;
 
-    // Propiedades de Gráficos (ahora interactúan con GameSettingsManager)
-    [SerializeField] public TMPro.TMP_Dropdown resolutionDropdown;
-    [SerializeField] public TMPro.TMP_Dropdown qualityDropdown;
+    [SerializeField] public TMP_Dropdown resolutionDropdown;
+    [SerializeField] public TMP_Dropdown qualityDropdown;
     [SerializeField] public Toggle fullScreenToggle;
 
     private List<string> resolutionOptions = new List<string>();
@@ -20,58 +19,43 @@ public class SettingsMenu : MonoBehaviour
     {
         if (GameSettingsManager.Instance == null)
         {
-            Debug.LogError("GameSettingsManager no encontrado. Asegúrate de que un GameObject con GameSettingsManager esté en tu escena de inicio y use DontDestroyOnLoad().");
+            Debug.LogError("GameSettingsManager no encontrado.");
             return;
         }
 
-        InitializeResolutionDropdown(); 
-        UpdateUIFromGameSettingsManager(); 
-        SetupUISetListeners(); 
+        InitializeResolutionDropdown();
+        UpdateUIFromGameSettingsManager();
+        SetupUISetListeners();
     }
+
     void InitializeResolutionDropdown()
     {
-        Resolution[] availableResolutions = GameSettingsManager.Instance.GetAvailableResolutions();
+        List<Resolution> availableResolutions = GameSettingsManager.Instance.GetFilteredResolutions();
         resolutionDropdown.ClearOptions();
-        resolutionOptions.Clear(); // Limpia la lista interna de strings también
+        resolutionOptions.Clear();
 
-        HashSet<string> addedResolutions = new HashSet<string>();
-
-        for (int i = 0; i < availableResolutions.Length; i++)
+        foreach (var res in availableResolutions)
         {
-            string option = availableResolutions[i].width + " x " + availableResolutions[i].height;
-            if (!addedResolutions.Contains(option))
-            {
-                addedResolutions.Add(option);
-                resolutionOptions.Add(option); // Guarda los strings de las opciones
-            }
+            string option = res.width + " x " + res.height;
+            resolutionOptions.Add(option);
         }
+
         resolutionDropdown.AddOptions(resolutionOptions);
     }
+
     void UpdateUIFromGameSettingsManager()
     {
-        string savedResolutionString = GameSettingsManager.Instance.currentResolutionWidth + " x " + GameSettingsManager.Instance.currentResolutionHeight;
-        int targetDropdownIndex = 0;
-
-        for (int i = 0; i < resolutionOptions.Count; i++) 
-        {
-            if (resolutionOptions[i] == savedResolutionString)
-            {
-                targetDropdownIndex = i;
-                break;
-            }
-        }
-        resolutionDropdown.value = targetDropdownIndex;
+        string currentRes = GameSettingsManager.Instance.currentResolutionWidth + " x " + GameSettingsManager.Instance.currentResolutionHeight;
+        int selectedIndex = resolutionOptions.FindIndex(option => option == currentRes);
+        resolutionDropdown.value = Mathf.Max(selectedIndex, 0);
         resolutionDropdown.RefreshShownValue();
 
-        // Actualizar Dropdown de Calidad
         qualityDropdown.value = GameSettingsManager.Instance.currentQualityLevel;
         qualityDropdown.RefreshShownValue();
 
-        // Actualizar Toggle de Pantalla Completa
         fullScreenToggle.isOn = GameSettingsManager.Instance.isFullScreen;
 
-        float currentVolume;
-        if (audioMixer != null && audioMixer.GetFloat("volume", out currentVolume))
+        if (audioMixer != null && audioMixer.GetFloat("volume", out float currentVolume))
         {
             musicSilder.value = Mathf.Pow(10, currentVolume / 20);
         }
@@ -89,10 +73,6 @@ public class SettingsMenu : MonoBehaviour
         fullScreenToggle.onValueChanged.AddListener(GameSettingsManager.Instance.SetAndSaveFullScreen);
         musicSilder.onValueChanged.AddListener((float value) => SetMusicVolume());
     }
-    public void SetResolution(int resolutionIndex)
-    {
-        GameSettingsManager.Instance.SetAndSaveResolution(resolutionIndex);
-    }
 
     public void SetMusicVolume()
     {
@@ -100,19 +80,9 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
 
-    public void SetQuality(int qualityIndex)
-    {
-        GameSettingsManager.Instance.SetAndSaveQuality(qualityIndex);
-    }
-
-    public void SetFullScreen(bool isFullScreen)
-    {
-        GameSettingsManager.Instance.SetAndSaveFullScreen(isFullScreen);
-    }
-
     public void ApplySettings()
     {
         GameSettingsManager.Instance.SaveSettings();
-        Debug.Log("Opciones de pantalla y calidad guardadas y aplicadas.");
+        Debug.Log("Opciones aplicadas y guardadas.");
     }
 }

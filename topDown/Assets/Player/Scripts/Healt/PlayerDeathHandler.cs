@@ -23,6 +23,9 @@ public class PlayerDeathHandler : MonoBehaviour
     private void HandleDeath()
     {
         Debug.Log("PlayerDeathHandler: Jugador muri�, avisando al GameManager.");
+
+        AudioListener.pause = true;
+
         if (gameManager.Instance != null)
         {
             animator.SetBool("canMove", false);

@@ -9,6 +9,7 @@ TagManager:
   - Audio
   - Boss
   - GameManager
+  - Music
   layers:
   - Default
   - TransparentFX
