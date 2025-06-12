@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9105971163025005448
 Transform:
   m_ObjectHideFlags: 0
@@ -4938,7 +4938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2059354639260777476, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: maxHealth
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.x
@@ -5068,7 +5068,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3225830008690045761}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aedcb40110817c4eab934317ba3897f, type: 3}
   m_Name: 

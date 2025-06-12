@@ -67,6 +67,16 @@ public class AudioMenu : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         Debug.Log($"AudioMenu OnSceneLoaded: Escena '{scene.name}' cargada. Mode: {mode}");
+
+        if (scene.name == "MainMenu")
+        {
+            PlayMenuMusic();
+        }
+        else
+        {
+            PlayGameplayMusic();
+        }
+
         FindAndSetupVolumeSlider();
     }
 

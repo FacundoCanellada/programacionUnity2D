@@ -289,7 +289,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &240062266
 Transform:
   m_ObjectHideFlags: 0
@@ -2100,6 +2100,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemySpawnerZigZag
       objectReference: {fileID: 0}
+    - target: {fileID: 3482364850957858546, guid: a240db64943ddf34e9b42ff781a2f48a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8032549558948392108, guid: a240db64943ddf34e9b42ff781a2f48a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2139,6 +2143,14 @@ PrefabInstance:
     - target: {fileID: 8032549558948392108, guid: a240db64943ddf34e9b42ff781a2f48a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288596218973511154, guid: a240db64943ddf34e9b42ff781a2f48a, type: 3}
+      propertyPath: tiempoMaxSpawn
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 8288596218973511154, guid: a240db64943ddf34e9b42ff781a2f48a, type: 3}
+      propertyPath: tiempoMinSpawn
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2328,6 +2340,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 698683037862533664, guid: b9d622c912ec5da40a8632103fef4bac, type: 3}
+      propertyPath: tiempoMaxSpawn
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 698683037862533664, guid: b9d622c912ec5da40a8632103fef4bac, type: 3}
+      propertyPath: tiempoMinSpawn
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1570739901127338878, guid: b9d622c912ec5da40a8632103fef4bac, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.092274606
@@ -2720,6 +2740,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2575858972707419111, guid: f3ada11dc20f6d64aab7e7c26f449f71, type: 3}
+      propertyPath: tiempoMaxSpawn
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2575858972707419111, guid: f3ada11dc20f6d64aab7e7c26f449f71, type: 3}
+      propertyPath: tiempoMinSpawn
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4593971845797200569, guid: f3ada11dc20f6d64aab7e7c26f449f71, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.042887
@@ -3066,7 +3094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1891487697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,11 +3108,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 3225830008690045761, guid: 677e7934ba2bf844cb63d22e465efa82, type: 3}
-  tiempoParaAparecer: 15
+  tiempoParaAparecer: 85
   radioDeAparicion: 7
   wallPrefab: {fileID: 3250488090879526221, guid: 4b902aca1acb0a34d8bd2961fd36eae0, type: 3}
-  anchoZona: 24
-  altoZona: 12
+  anchoZona: 48
+  altoZona: 24
   grosorPared: 1
   bossTutorialID: BossHasAppeared
   bossTutorialDescription: "\xA1Un poderoso enemigo ha aparecido! Prep\xE1rate para
@@ -3242,6 +3270,83 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &1990119319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1122633840263249652, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: tiempoMaxSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122633840263249652, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: tiempoMinSpawn
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122633840263249652, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: tiempoEntreOleadas
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122633840263249652, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: usarSpawnPorOleadas
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122633840263249652, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: cantidadEnemigosPorOleada
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -9.002923
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.89599085
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1435028274343317418, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5530631167668180468, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
+      propertyPath: m_Name
+      value: Enemy Spawner (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fb9f8fa579033b54a9117ab79681c535, type: 3}
 --- !u!1 &2040835308
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,6 +3951,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8732479808776858623, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
+      propertyPath: movementTutorialDescription
+      value: Usa las teclas 'W, A, S, D' para moverte y el mouse para apuntar.
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8256405519531360602, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
     - {fileID: 6590871116161792015, guid: 025c7075f144ba646a71f8490fae0e83, type: 3}
@@ -4005,9 +4114,10 @@ SceneRoots:
   - {fileID: 2040835311}
   - {fileID: 1832649540}
   - {fileID: 1880717390}
+  - {fileID: 1990119319}
   - {fileID: 1474337855}
-  - {fileID: 1830798687}
   - {fileID: 1337506002}
+  - {fileID: 1830798687}
   - {fileID: 1891487698}
   - {fileID: 648188678}
   - {fileID: 1832849480}

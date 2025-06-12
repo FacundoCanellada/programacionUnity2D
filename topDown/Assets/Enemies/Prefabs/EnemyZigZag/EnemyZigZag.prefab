@@ -66,7 +66,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: speed
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: useZigZag
@@ -74,11 +74,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: zigZagFrequency
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: zigZagMagnitude
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Sprite
