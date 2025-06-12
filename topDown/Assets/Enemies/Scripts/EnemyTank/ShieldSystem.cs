@@ -10,9 +10,11 @@ public class ShieldSystem : MonoBehaviour
     private float shieldTimer = 0f;
     private float cooldownTimer = 0f;
     private enemyHealth enemyHealth;
+    private Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
         enemyHealth = GetComponent<enemyHealth>();
         if (shieldVisual != null)
             shieldVisual.SetActive(true);
@@ -37,6 +39,8 @@ public class ShieldSystem : MonoBehaviour
     private void ActivateShield()
     {
         isShieldActive = true;
+        animator.SetBool("Shield", true);
+        animator.SetTrigger("Shieldd");
         shieldTimer = shieldDuration;
         cooldownTimer = cooldownDuration;
 
@@ -47,6 +51,7 @@ public class ShieldSystem : MonoBehaviour
 
     private void DeactivateShield()
     {
+        animator.SetBool("Shield", false);
         isShieldActive = false;
         enemyHealth.SetInvulnerable(false);
         if (shieldVisual != null)

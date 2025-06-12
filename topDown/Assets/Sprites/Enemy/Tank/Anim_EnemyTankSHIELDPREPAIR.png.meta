@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 614cdf9f048a4ff45be7d1744f2ad35f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4360837862656945763
+    second: Anim_EnemyTankSHIELDPREPAIR_0
+  - first:
+      213: -8706810357233799211
+    second: Anim_EnemyTankSHIELDPREPAIR_1
+  - first:
+      213: 1170472877004011001
+    second: Anim_EnemyTankSHIELDPREPAIR_2
+  - first:
+      213: -8567272903729622682
+    second: Anim_EnemyTankSHIELDPREPAIR_3
+  - first:
+      213: 200713638869073059
+    second: Anim_EnemyTankSHIELDPREPAIR_4
+  - first:
+      213: -4243273814614766865
+    second: Anim_EnemyTankSHIELDPREPAIR_5
+  - first:
+      213: 7674938057961185479
+    second: Anim_EnemyTankSHIELDPREPAIR_6
+  - first:
+      213: -8796684700190342922
+    second: Anim_EnemyTankSHIELDPREPAIR_7
+  - first:
+      213: 1974172553376208377
+    second: Anim_EnemyTankSHIELDPREPAIR_8
+  - first:
+      213: 2851477715276771448
+    second: Anim_EnemyTankSHIELDPREPAIR_9
+  - first:
+      213: 8657611495134518557
+    second: Anim_EnemyTankSHIELDPREPAIR_10
+  - first:
+      213: -6122591207457264852
+    second: Anim_EnemyTankSHIELDPREPAIR_11
+  - first:
+      213: -6598675119295918716
+    second: Anim_EnemyTankSHIELDPREPAIR_12
+  - first:
+      213: -1779682082716964906
+    second: Anim_EnemyTankSHIELDPREPAIR_13
+  - first:
+      213: 8082729996322088127
+    second: Anim_EnemyTankSHIELDPREPAIR_14
+  - first:
+      213: -8779874248262837057
+    second: Anim_EnemyTankSHIELDPREPAIR_15
+  - first:
+      213: -5295760497250590782
+    second: Anim_EnemyTankSHIELDPREPAIR_16
+  - first:
+      213: -8964071540161186104
+    second: Anim_EnemyTankSHIELDPREPAIR_17
+  - first:
+      213: -2047719249900202141
+    second: Anim_EnemyTankSHIELDPREPAIR_18
+  - first:
+      213: -9067957631527473012
+    second: Anim_EnemyTankSHIELDPREPAIR_19
+  - first:
+      213: -6168515315154722302
+    second: Anim_EnemyTankSHIELDPREPAIR_20
+  - first:
+      213: -6184374021713937059
+    second: Anim_EnemyTankSHIELDPREPAIR_21
+  - first:
+      213: -4641152734412694890
+    second: Anim_EnemyTankSHIELDPREPAIR_22
+  - first:
+      213: 3329980625946705044
+    second: Anim_EnemyTankSHIELDPREPAIR_23
+  - first:
+      213: -3787852306934100264
+    second: Anim_EnemyTankSHIELDPREPAIR_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36eadbe6eeec48c30800000000000000
+      internalID: 4360837862656945763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df236a5c123b2780800000000000000
+      internalID: -8706810357233799211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5bd0551ea5e3010800000000000000
+      internalID: 1170472877004011001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 661dd577faeea1980800000000000000
+      internalID: -8567272903729622682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3acfd5abdf319c200800000000000000
+      internalID: 200713638869073059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fea8b2b82fcdc15c0800000000000000
+      internalID: -4243273814614766865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c027e9008bd28a60800000000000000
+      internalID: 7674938057961185479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f08a0c3fd5ebe580800000000000000
+      internalID: -8796684700190342922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f590594a7ba56b10800000000000000
+      internalID: 1974172553376208377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 870b300dfdb729720800000000000000
+      internalID: 2851477715276771448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1dd4dae8c3062870800000000000000
+      internalID: 8657611495134518557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2b64965cbf280ba0800000000000000
+      internalID: -6122591207457264852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d8826b0fbcc64a0800000000000000
+      internalID: -6598675119295918716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7278e239c4d47e0800000000000000
+      internalID: -1779682082716964906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb42c268b10ab2070800000000000000
+      internalID: 8082729996322088127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc91b393ee972680800000000000000
+      internalID: -8779874248262837057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf15d9c2eda186b0800000000000000
+      internalID: -5295760497250590782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6f08b8d68399380800000000000000
+      internalID: -8964071540161186104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36718f5013a0593e0800000000000000
+      internalID: -2047719249900202141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8033860494282280800000000000000
+      internalID: -9067957631527473012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20265a8c008056aa0800000000000000
+      internalID: -6168515315154722302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5d369de790bc2aa0800000000000000
+      internalID: -6184374021713937059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69a9ffc8d20579fb0800000000000000
+      internalID: -4641152734412694890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c7c7e7cb7763e20800000000000000
+      internalID: 3329980625946705044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyTankSHIELDPREPAIR_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8de8c8f4568de6bc0800000000000000
+      internalID: -3787852306934100264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d4840abdaca2584b8a9d72359471335
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_EnemyTankSHIELDPREPAIR_0: 4360837862656945763
+      Anim_EnemyTankSHIELDPREPAIR_1: -8706810357233799211
+      Anim_EnemyTankSHIELDPREPAIR_10: 8657611495134518557
+      Anim_EnemyTankSHIELDPREPAIR_11: -6122591207457264852
+      Anim_EnemyTankSHIELDPREPAIR_12: -6598675119295918716
+      Anim_EnemyTankSHIELDPREPAIR_13: -1779682082716964906
+      Anim_EnemyTankSHIELDPREPAIR_14: 8082729996322088127
+      Anim_EnemyTankSHIELDPREPAIR_15: -8779874248262837057
+      Anim_EnemyTankSHIELDPREPAIR_16: -5295760497250590782
+      Anim_EnemyTankSHIELDPREPAIR_17: -8964071540161186104
+      Anim_EnemyTankSHIELDPREPAIR_18: -2047719249900202141
+      Anim_EnemyTankSHIELDPREPAIR_19: -9067957631527473012
+      Anim_EnemyTankSHIELDPREPAIR_2: 1170472877004011001
+      Anim_EnemyTankSHIELDPREPAIR_20: -6168515315154722302
+      Anim_EnemyTankSHIELDPREPAIR_21: -6184374021713937059
+      Anim_EnemyTankSHIELDPREPAIR_22: -4641152734412694890
+      Anim_EnemyTankSHIELDPREPAIR_23: 3329980625946705044
+      Anim_EnemyTankSHIELDPREPAIR_24: -3787852306934100264
+      Anim_EnemyTankSHIELDPREPAIR_3: -8567272903729622682
+      Anim_EnemyTankSHIELDPREPAIR_4: 200713638869073059
+      Anim_EnemyTankSHIELDPREPAIR_5: -4243273814614766865
+      Anim_EnemyTankSHIELDPREPAIR_6: 7674938057961185479
+      Anim_EnemyTankSHIELDPREPAIR_7: -8796684700190342922
+      Anim_EnemyTankSHIELDPREPAIR_8: 1974172553376208377
+      Anim_EnemyTankSHIELDPREPAIR_9: 2851477715276771448
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
