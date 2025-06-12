@@ -107,6 +107,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.0011017919
       objectReference: {fileID: 0}
+    - target: {fileID: -1861352561867823450, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: damageAmount
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: -37183049952278779, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Radius
       value: 0.45903254
@@ -121,7 +125,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2059354639260777476, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: maxHealth
-      value: 15
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.x
@@ -177,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: speed
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2709612487966647719, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: rotationSpeed
