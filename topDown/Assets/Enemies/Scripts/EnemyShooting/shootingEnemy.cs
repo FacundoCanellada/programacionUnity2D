@@ -1,4 +1,4 @@
-using UnityEngine;
+Ôªøusing UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
@@ -13,7 +13,10 @@ public class EnemyShooting : MonoBehaviour
 
     [SerializeField] private float bulletLifetime;
     private Transform player;
+    public SpriteRenderer enemySpriteRenderer;
 
+    [Header("Fire Point Offset")]
+    [SerializeField] private float firePointOffsetX = 0.5f;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
@@ -41,42 +44,47 @@ public class EnemyShooting : MonoBehaviour
             fireTimer = 0f;
         }
 
-        // Gira para mirar al jugador
-        Vector3 direction = player.position - transform.position;
-        float rotZ = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ);
+        // Detectar si el jugador est√° a la izquierda o derecha
+        bool playerIsLeft = player.position.x < transform.position.x;
+
+        // Flip del sprite
+        enemySpriteRenderer.flipX = !playerIsLeft;
+
+        // Ajustar firePoint en X (a la izquierda o derecha del enemigo)
+        float offsetX = playerIsLeft ? -Mathf.Abs(firePointOffsetX) : Mathf.Abs(firePointOffsetX);
+        firePoint.localPosition = new Vector3(offsetX, firePoint.localPosition.y, firePoint.localPosition.z);
     }
+
 
     void Fire()
     {
         Vector3 direction = (player.position - firePoint.position).normalized;
 
-        // ¡ngulos en grados para dispersiÛn de las balas
         float[] angles = { -15f, 0f, 15f };
 
-        foreach (float angle in angles)
-        {
-            GameObject bullet = GetAvailableBullet();
-            if (bullet == null) return;
-
-            bullet.transform.position = firePoint.position;
-
-            // Rotamos el vector de direcciÛn
-            Vector3 rotatedDir = Quaternion.Euler(0, 0, angle) * direction;
-            bullet.transform.rotation = Quaternion.LookRotation(Vector3.forward, rotatedDir); // para que mire la direcciÛn
-
-            bullet.SetActive(true);
-            bullet.GetComponent<EnemyBullet>().Launch(rotatedDir.normalized);
-        }
-    }
-
-    GameObject GetAvailableBullet()
+    foreach (float angle in angles)
     {
-        foreach (GameObject b in bulletPool)
-        {
-            if (!b.activeInHierarchy)
-                return b;
-        }
-        return null;
+        GameObject bullet = GetAvailableBullet();
+        if (bullet == null) return;
+
+        bullet.transform.position = firePoint.position;
+
+        // Rota la direcci√≥n en Z
+        Vector3 rotatedDir = Quaternion.Euler(0, 0, angle) * direction;
+        bullet.transform.rotation = Quaternion.LookRotation(Vector3.forward, rotatedDir);
+
+        bullet.SetActive(true);
+        bullet.GetComponent<EnemyBullet>().Launch(rotatedDir.normalized);
     }
 }
+
+        GameObject GetAvailableBullet()
+        {
+            foreach (GameObject b in bulletPool)
+            {
+                if (!b.activeInHierarchy)
+                    return b;
+            }
+            return null;
+        }
+    }

@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 1405127153983441032}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.215, y: 0, z: 0}
+  m_LocalPosition: {x: -0.709, y: -0.137, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -227,6 +227,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 320484390812063896}
   m_SourcePrefab: {fileID: 100100000, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+--- !u!212 &1598078900415564927 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+  m_PrefabInstance: {fileID: 6460976873745964426}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3184311021889234100 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8474351992518867262, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
@@ -249,6 +254,8 @@ MonoBehaviour:
   fireCooldown: 1
   poolSize: 3
   bulletLifetime: 0
+  enemySpriteRenderer: {fileID: 1598078900415564927}
+  firePointOffsetX: 1
 --- !u!4 &9001274174262755155 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}

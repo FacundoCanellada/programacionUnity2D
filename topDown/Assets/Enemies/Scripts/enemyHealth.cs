@@ -89,7 +89,7 @@ public class enemyHealth : MonoBehaviour
 
         gameManager.Instance?.EnemyDefeated(); // Evita errores si no hay GameManager en escena
         DisableAllEnemyScripts();
-        StartCoroutine(DestroyAfterDelay(40F));
+        StartCoroutine(DestroyAfterDelay(3f));
         
     }
     private IEnumerator DestroyAfterDelay(float delay)

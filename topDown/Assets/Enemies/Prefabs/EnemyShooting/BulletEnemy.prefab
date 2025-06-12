@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: BulletEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1697561318830058155, guid: 3d9de893ac35c5a4a8961f0eb773e5a5, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5122744566400156749, guid: 3d9de893ac35c5a4a8961f0eb773e5a5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8365862501160020462, guid: 3d9de893ac35c5a4a8961f0eb773e5a5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -90,6 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8325af5bdeaecc41afa9e0a44540fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2.5
   lifetime: 0.7
   damage: 5
