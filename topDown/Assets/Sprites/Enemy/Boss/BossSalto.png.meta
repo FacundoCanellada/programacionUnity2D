@@ -1,0 +1,1088 @@
+fileFormatVersion: 2
+guid: 394fb343ad6345f42bf746148388600d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4657768123516004417
+    second: BossSalto_0
+  - first:
+      213: -1185874023162365508
+    second: BossSalto_1
+  - first:
+      213: 3673860523263255092
+    second: BossSalto_2
+  - first:
+      213: -8299837768466608970
+    second: BossSalto_3
+  - first:
+      213: -3776317239925720542
+    second: BossSalto_4
+  - first:
+      213: -5932747526058899519
+    second: BossSalto_5
+  - first:
+      213: 7185696133068209253
+    second: BossSalto_6
+  - first:
+      213: -7756587943024536878
+    second: BossSalto_7
+  - first:
+      213: 8121885131863287982
+    second: BossSalto_8
+  - first:
+      213: 3003774858887253095
+    second: BossSalto_9
+  - first:
+      213: 2308289200299908655
+    second: BossSalto_10
+  - first:
+      213: -264731896906377655
+    second: BossSalto_11
+  - first:
+      213: -8739894115193378739
+    second: BossSalto_12
+  - first:
+      213: 3557622532226336871
+    second: BossSalto_13
+  - first:
+      213: 3039735297256909893
+    second: BossSalto_14
+  - first:
+      213: 8137767976899905611
+    second: BossSalto_15
+  - first:
+      213: 5299691548537950151
+    second: BossSalto_16
+  - first:
+      213: 5587535825012757912
+    second: BossSalto_17
+  - first:
+      213: -1652526182259497329
+    second: BossSalto_18
+  - first:
+      213: -7247368121227704587
+    second: BossSalto_19
+  - first:
+      213: -229744235526407480
+    second: BossSalto_20
+  - first:
+      213: -1626857301996389980
+    second: BossSalto_21
+  - first:
+      213: 5841062355010191031
+    second: BossSalto_22
+  - first:
+      213: 4702419870106018507
+    second: BossSalto_23
+  - first:
+      213: 2180218499812394137
+    second: BossSalto_24
+  - first:
+      213: 8903724182255560161
+    second: BossSalto_25
+  - first:
+      213: -1223664176650766628
+    second: BossSalto_26
+  - first:
+      213: 9083187185225552112
+    second: BossSalto_27
+  - first:
+      213: -6741506503751045850
+    second: BossSalto_28
+  - first:
+      213: 2592317116292958067
+    second: BossSalto_29
+  - first:
+      213: 7093524494254860018
+    second: BossSalto_30
+  - first:
+      213: -7819807122772090310
+    second: BossSalto_31
+  - first:
+      213: 7012878404728619288
+    second: BossSalto_32
+  - first:
+      213: 4439431373818822900
+    second: BossSalto_33
+  - first:
+      213: 2282475416945270269
+    second: BossSalto_34
+  - first:
+      213: -4741945904685705385
+    second: BossSalto_35
+  - first:
+      213: 3255345638264592363
+    second: BossSalto_36
+  - first:
+      213: 527471898017155017
+    second: BossSalto_37
+  - first:
+      213: -8377673752375452239
+    second: BossSalto_38
+  - first:
+      213: -5160933669235296033
+    second: BossSalto_39
+  - first:
+      213: 2995656038301085393
+    second: BossSalto_40
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossSalto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7d0bfc1984c5fb0800000000000000
+      internalID: -4657768123516004417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb93b05ebddea8fe0800000000000000
+      internalID: -1185874023162365508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 432ef635eac2cf230800000000000000
+      internalID: 3673860523263255092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc4d25268d01dc80800000000000000
+      internalID: -8299837768466608970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22a3b036a73d79bc0800000000000000
+      internalID: -3776317239925720542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c78e2fde85aaada0800000000000000
+      internalID: -5932747526058899519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56cbd63cf88b8b360800000000000000
+      internalID: 7185696133068209253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2d1faac501b5490800000000000000
+      internalID: -7756587943024536878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea8ec3fee7bb6b070800000000000000
+      internalID: 8121885131863287982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76c4939c15d8fa920800000000000000
+      internalID: 3003774858887253095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2e1fbe3cc0b80020800000000000000
+      internalID: 2308289200299908655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9461e2c0ebb735cf0800000000000000
+      internalID: -264731896906377655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d482f51bb98a5b680800000000000000
+      internalID: -8739894115193378739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 768c64e08d63f5130800000000000000
+      internalID: 3557622532226336871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ce63cc52f4f2a20800000000000000
+      internalID: 3039735297256909893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b480ba7fbd82fe070800000000000000
+      internalID: 8137767976899905611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf8eb962694c8940800000000000000
+      internalID: 5299691548537950151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89597a39a3aea8d40800000000000000
+      internalID: 5587535825012757912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_18
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f86e364513c0119e0800000000000000
+      internalID: -1652526182259497329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_19
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f68bb9871d2c6b90800000000000000
+      internalID: -7247368121227704587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_20
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ca3144c5d8cfccf0800000000000000
+      internalID: -229744235526407480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_21
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9314e37ed3c69e0800000000000000
+      internalID: -1626857301996389980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bef94db34f9f0150800000000000000
+      internalID: 5841062355010191031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_23
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc2686615f9524140800000000000000
+      internalID: 4702419870106018507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9948d0e9c21b14e10800000000000000
+      internalID: 2180218499812394137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_25
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e5e56548f1609b70800000000000000
+      internalID: 8903724182255560161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_28
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62deee88d8b5172a0800000000000000
+      internalID: -6741506503751045850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_29
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3778ecdbea2c9f320800000000000000
+      internalID: 2592317116292958067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8118bd6d0cfb25160800000000000000
+      internalID: 7012878404728619288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f0023930570c9d30800000000000000
+      internalID: 4439431373818822900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_34
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd95937c4bfcaf10800000000000000
+      internalID: 2282475416945270269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_35
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7571717d259313eb0800000000000000
+      internalID: -4741945904685705385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_36
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7d0e54c9f4d2d20800000000000000
+      internalID: 3255345638264592363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_37
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c7405685e4f15700800000000000000
+      internalID: 527471898017155017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_38
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bd1c89eb168cbb80800000000000000
+      internalID: -8377673752375452239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossSalto_39
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd870efeb2ea068b0800000000000000
+      internalID: -5160933669235296033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 73a7959d66a744f4fb60a7690c3c72d3
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossSalto_0: -4657768123516004417
+      BossSalto_1: -1185874023162365508
+      BossSalto_10: 2308289200299908655
+      BossSalto_11: -264731896906377655
+      BossSalto_12: -8739894115193378739
+      BossSalto_13: 3557622532226336871
+      BossSalto_14: 3039735297256909893
+      BossSalto_15: 8137767976899905611
+      BossSalto_16: 5299691548537950151
+      BossSalto_17: 5587535825012757912
+      BossSalto_18: -1652526182259497329
+      BossSalto_19: -7247368121227704587
+      BossSalto_2: 3673860523263255092
+      BossSalto_20: -229744235526407480
+      BossSalto_21: -1626857301996389980
+      BossSalto_22: 5841062355010191031
+      BossSalto_23: 4702419870106018507
+      BossSalto_24: 2180218499812394137
+      BossSalto_25: 8903724182255560161
+      BossSalto_26: -1223664176650766628
+      BossSalto_27: 9083187185225552112
+      BossSalto_28: -6741506503751045850
+      BossSalto_29: 2592317116292958067
+      BossSalto_3: -8299837768466608970
+      BossSalto_30: 7093524494254860018
+      BossSalto_31: -7819807122772090310
+      BossSalto_32: 7012878404728619288
+      BossSalto_33: 4439431373818822900
+      BossSalto_34: 2282475416945270269
+      BossSalto_35: -4741945904685705385
+      BossSalto_36: 3255345638264592363
+      BossSalto_37: 527471898017155017
+      BossSalto_38: -8377673752375452239
+      BossSalto_39: -5160933669235296033
+      BossSalto_4: -3776317239925720542
+      BossSalto_40: 2995656038301085393
+      BossSalto_41: 799658673
+      BossSalto_42: -1343616624
+      BossSalto_5: -5932747526058899519
+      BossSalto_6: 7185696133068209253
+      BossSalto_7: -7756587943024536878
+      BossSalto_8: 8121885131863287982
+      BossSalto_9: 3003774858887253095
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

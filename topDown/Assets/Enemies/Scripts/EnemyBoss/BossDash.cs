@@ -4,6 +4,7 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class BossDash : MonoBehaviour
 {
+    private Animator animator;
     [Header("Dash Settings")]
     public float dashSpeed = 25f;
     public float dashDuration = 0.3f;
@@ -30,6 +31,7 @@ public class BossDash : MonoBehaviour
 
     private void Awake()
     {
+        animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         enemyMovement = GetComponent<EnemyMovement>();
         attackComponent = GetComponent<enemyAttack>();
@@ -58,10 +60,12 @@ public class BossDash : MonoBehaviour
         {
             chargeEffect.gameObject.SetActive(true);
             chargeEffect.Play();
+            animator.SetBool("Jumping", true);
+            animator.SetTrigger("Jump");
         }
 
         yield return new WaitForSeconds(chargeTime);
-
+        animator.SetBool("Jumping", false);
         if (chargeEffect != null)
         {
             chargeEffect.Stop();
@@ -71,7 +75,7 @@ public class BossDash : MonoBehaviour
         dashDirection = direction.normalized;
         isDashing = true;
 
-        // Desactivar daño normal mientras dasha
+        // Desactivar daï¿½o normal mientras dasha
         if (attackComponent != null)
         {
             attackComponent.enabled = false;
@@ -106,6 +110,7 @@ public class BossDash : MonoBehaviour
         }
 
         isDashing = false;
+        
         yield return new WaitForSeconds(dashCooldown);
         canDash = true;
     }
@@ -120,7 +125,7 @@ public class BossDash : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.takeDamge(dashDamage);
-                Debug.Log("Daño por dash aplicado");
+                Debug.Log("Daï¿½o por dash aplicado");
             }
 
             Rigidbody2D playerRb = other.GetComponent<Rigidbody2D>();

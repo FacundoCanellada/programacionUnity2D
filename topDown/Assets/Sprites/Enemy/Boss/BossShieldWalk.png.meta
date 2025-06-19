@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 5259955748ae3dd45be71ed3995312bc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1815048675303180173
+    second: BossShieldWalk_0
+  - first:
+      213: 2329756796150186405
+    second: BossShieldWalk_1
+  - first:
+      213: -7537496428748378892
+    second: BossShieldWalk_2
+  - first:
+      213: -7504072793833299710
+    second: BossShieldWalk_3
+  - first:
+      213: -8417375351491499470
+    second: BossShieldWalk_4
+  - first:
+      213: -4356749239750642553
+    second: BossShieldWalk_5
+  - first:
+      213: -2571809985130085717
+    second: BossShieldWalk_6
+  - first:
+      213: -384737951614737983
+    second: BossShieldWalk_7
+  - first:
+      213: 5305089894214727598
+    second: BossShieldWalk_8
+  - first:
+      213: -943803667782546554
+    second: BossShieldWalk_9
+  - first:
+      213: 8103793974352459247
+    second: BossShieldWalk_10
+  - first:
+      213: 562717015982359878
+    second: BossShieldWalk_11
+  - first:
+      213: 8657087957501378123
+    second: BossShieldWalk_12
+  - first:
+      213: 8218034811557576630
+    second: BossShieldWalk_13
+  - first:
+      213: 239579463707084322
+    second: BossShieldWalk_14
+  - first:
+      213: 7348679206939285408
+    second: BossShieldWalk_15
+  - first:
+      213: -8652500967227119764
+    second: BossShieldWalk_16
+  - first:
+      213: 8903981719553688524
+    second: BossShieldWalk_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 500
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BossShieldWalk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d874d755729503910800000000000000
+      internalID: 1815048675303180173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a185976675f45020800000000000000
+      internalID: 2329756796150186405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc6da4feee656790800000000000000
+      internalID: -7537496428748378892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_3
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 201a4e26d8d2cd790800000000000000
+      internalID: -7504072793833299710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_4
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a683907b97f2b80800000000000000
+      internalID: -8417375351491499470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_5
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784b53546a7b983c0800000000000000
+      internalID: -4356749239750642553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_6
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba2c48ec1781f4cd0800000000000000
+      internalID: -2571809985130085717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_7
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c164661fd229aaf0800000000000000
+      internalID: -384737951614737983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7fe26b6277f9940800000000000000
+      internalID: 5305089894214727598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_9
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68b4c1c809fe6e2f0800000000000000
+      internalID: -943803667782546554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_10
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5ba361fa5767070800000000000000
+      internalID: 8103793974352459247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_11
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64542b6052c2fc700800000000000000
+      internalID: 562717015982359878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_12
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4e7e2051a7242870800000000000000
+      internalID: 8657087957501378123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bffeaebe135c0270800000000000000
+      internalID: 8218034811557576630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_14
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2264dbdb048235300800000000000000
+      internalID: 239579463707084322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_15
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3096
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a75ae1cdc0cbf560800000000000000
+      internalID: 7348679206939285408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6724b596342ce780800000000000000
+      internalID: -8652500967227119764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BossShieldWalk_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2596
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3c198d23c419b70800000000000000
+      internalID: 8903981719553688524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6ba5636112ef27e448f2d29f144e6d5e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BossShieldWalk_0: 1815048675303180173
+      BossShieldWalk_1: 2329756796150186405
+      BossShieldWalk_10: 8103793974352459247
+      BossShieldWalk_11: 562717015982359878
+      BossShieldWalk_12: 8657087957501378123
+      BossShieldWalk_13: 8218034811557576630
+      BossShieldWalk_14: 239579463707084322
+      BossShieldWalk_15: 7348679206939285408
+      BossShieldWalk_16: -8652500967227119764
+      BossShieldWalk_17: 8903981719553688524
+      BossShieldWalk_2: -7537496428748378892
+      BossShieldWalk_3: -7504072793833299710
+      BossShieldWalk_4: -8417375351491499470
+      BossShieldWalk_5: -4356749239750642553
+      BossShieldWalk_6: -2571809985130085717
+      BossShieldWalk_7: -384737951614737983
+      BossShieldWalk_8: 5305089894214727598
+      BossShieldWalk_9: -943803667782546554
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
