@@ -5000,6 +5000,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8474351992518867262, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Name
       value: EnemyBoss
