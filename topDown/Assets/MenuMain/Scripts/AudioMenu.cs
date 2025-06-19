@@ -26,6 +26,7 @@ public class AudioMenu : MonoBehaviour
     [SerializeField] private AudioClip pickupHealthClip;
     [SerializeField] private AudioClip pickupXPClip;
     [SerializeField] private AudioClip enemyHitClip;
+    [SerializeField] private AudioClip buttonClickClip;
 
     private const string MusicVolumeKey = "volume";
     private const string MixerParamName = "volume";
@@ -233,4 +234,5 @@ public class AudioMenu : MonoBehaviour
     public void PlayPickupHealth() => PlaySFX(pickupHealthClip);
     public void PlayPickupXP() => PlaySFX(pickupXPClip);
     public void PlayEnemyHit() => PlaySFX(enemyHitClip);
+    public void PlayButtonClick() => PlaySFX(buttonClickClip);
 }
