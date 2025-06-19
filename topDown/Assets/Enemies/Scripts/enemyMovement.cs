@@ -14,6 +14,7 @@ public class EnemyMovement : MonoBehaviour
     private float zigZagMagnitude = 0.5f;
 
     private Rigidbody2D rb;
+
     private enemyController enemyController;
     private Vector2 targetDirection;
     private float changeDirectionCooldown;
@@ -26,6 +27,7 @@ public class EnemyMovement : MonoBehaviour
     private Animator animator;
     private void Awake()
     {
+
         rb = GetComponent<Rigidbody2D>();
         enemyController = GetComponent<enemyController>();
         animator = GetComponent<Animator>();
@@ -70,6 +72,8 @@ public class EnemyMovement : MonoBehaviour
         Quaternion rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
 
         rb.SetRotation(rotation);
+
+        
     }
 
     private void setVelocity()
@@ -117,7 +121,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (repulsion != Vector2.zero)
         {
-            rb.AddForce(repulsion * 5f); // Puedes ajustar la fuerza según necesidad
+            rb.AddForce(repulsion * 5f); // Puedes ajustar la fuerza segï¿½n necesidad
         }
 
     }
