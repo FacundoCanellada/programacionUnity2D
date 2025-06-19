@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &240062266
 Transform:
   m_ObjectHideFlags: 0
@@ -3065,7 +3065,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1891487697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3079,7 +3079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 3225830008690045761, guid: 677e7934ba2bf844cb63d22e465efa82, type: 3}
-  tiempoParaAparecer: 85
+  tiempoParaAparecer: 2
   radioDeAparicion: 7
   wallPrefab: {fileID: 3250488090879526221, guid: 4b902aca1acb0a34d8bd2961fd36eae0, type: 3}
   anchoZona: 48

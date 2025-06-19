@@ -82,51 +82,41 @@ public class BossSpawner : MonoBehaviour
 
     private void CrearParedes(Vector3 centro, float anchoZona, float altoZona)
     {
-        float grosor = 1f; // Este es el grosor que quieres para todas las paredes
+        // Obtenemos el tamaño real del bloque en el mundo (en Unity units)
+        Vector2 tileSize = wallPrefab.GetComponent<SpriteRenderer>().bounds.size;
 
-        // Calculamos las posiciones de los CENTROS de cada pared
-        // El grosor/2f se añade o resta para que el borde exterior de la pared coincida con el límite del área
-        Vector3 posIzquierda = centro + new Vector3(-anchoZona / 2f - grosor / 2f, 0, 0);
-        Vector3 posDerecha = centro + new Vector3(anchoZona / 2f + grosor / 2f, 0, 0);
-        Vector3 posArriba = centro + new Vector3(0, altoZona / 2f + grosor / 2f, 0);
-        Vector3 posAbajo = centro + new Vector3(0, -altoZona / 2f - grosor / 2f, 0);
+        int tilesHorizontales = Mathf.FloorToInt(anchoZona / tileSize.x);
+        int tilesVerticales = Mathf.FloorToInt(altoZona / tileSize.y);
 
-        // Dimensiones para los SpriteRenderer y Colliders
-        // Las paredes verticales solo deben tener el 'altoZona' de alto
-        Vector2 sizeVertical = new Vector2(grosor, altoZona);
-        // Las paredes horizontales solo deben tener el 'anchoZona' de ancho
-        Vector2 sizeHorizontal = new Vector2(anchoZona, grosor);
+        Vector3 esquinaInferiorIzquierda = centro - new Vector3(anchoZona / 2f, altoZona / 2f, 0);
 
-        // Izquierda
-        GameObject paredIzquierda = Instantiate(wallPrefab, posIzquierda, Quaternion.identity);
-        paredIzquierda.GetComponent<SpriteRenderer>().size = sizeVertical;
-        BoxCollider2D colIzq = paredIzquierda.GetComponent<BoxCollider2D>();
-        colIzq.size = sizeVertical;
-        colIzq.offset = Vector2.zero;
-        // <--- QUITADA: paredIzquierda.layer = obstacleLayer;
+        // Pared inferior
+        for (int i = 0; i < tilesHorizontales; i++)
+        {
+            Vector3 posicion = esquinaInferiorIzquierda + new Vector3(i * tileSize.x + tileSize.x / 2f, tileSize.y / 2f, 0);
+            Instantiate(wallPrefab, posicion, Quaternion.identity);
+        }
 
-        // Derecha
-        GameObject paredDerecha = Instantiate(wallPrefab, posDerecha, Quaternion.identity);
-        paredDerecha.GetComponent<SpriteRenderer>().size = sizeVertical;
-        BoxCollider2D colDer = paredDerecha.GetComponent<BoxCollider2D>();
-        colDer.size = sizeVertical;
-        colDer.offset = Vector2.zero;
-        // <--- QUITADA: paredDerecha.layer = obstacleLayer;
+        // Pared superior
+        for (int i = 0; i < tilesHorizontales; i++)
+        {
+            Vector3 posicion = esquinaInferiorIzquierda + new Vector3(i * tileSize.x + tileSize.x / 2f, altoZona - tileSize.y / 2f, 0);
+            Instantiate(wallPrefab, posicion, Quaternion.identity);
+        }
 
-        // Arriba
-        GameObject paredArriba = Instantiate(wallPrefab, posArriba, Quaternion.identity);
-        paredArriba.GetComponent<SpriteRenderer>().size = sizeHorizontal;
-        BoxCollider2D colArr = paredArriba.GetComponent<BoxCollider2D>();
-        colArr.size = sizeHorizontal;
-        colArr.offset = Vector2.zero;
-        // <--- QUITADA: paredArriba.layer = obstacleLayer;
+        // Pared izquierda
+        for (int i = 0; i < tilesVerticales; i++)
+        {
+            Vector3 posicion = esquinaInferiorIzquierda + new Vector3(tileSize.x / 2f, i * tileSize.y + tileSize.y / 2f, 0);
+            Instantiate(wallPrefab, posicion, Quaternion.identity);
+        }
 
-        // Abajo
-        GameObject paredAbajo = Instantiate(wallPrefab, posAbajo, Quaternion.identity);
-        paredAbajo.GetComponent<SpriteRenderer>().size = sizeHorizontal;
-        BoxCollider2D colAba = paredAbajo.GetComponent<BoxCollider2D>();
-        colAba.size = sizeHorizontal;
-        colAba.offset = Vector2.zero;
-        // <--- QUITADA: paredAbajo.layer = obstacleLayer;
+        // Pared derecha
+        for (int i = 0; i < tilesVerticales; i++)
+        {
+            Vector3 posicion = esquinaInferiorIzquierda + new Vector3(anchoZona - tileSize.x / 2f, i * tileSize.y + tileSize.y / 2f, 0);
+            Instantiate(wallPrefab, posicion, Quaternion.identity);
+        }
     }
+
 }
