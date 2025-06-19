@@ -7,16 +7,31 @@ public class AudioMenu : MonoBehaviour
 {
     public static AudioMenu Instance { get; private set; }
 
-    [SerializeField] AudioSource audioSource;
-    public AudioMixer masterMixer;
-    public Slider volumeSlider; 
+    [Header("Audio Sources")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource sfxSource;
+    [SerializeField] private AudioMixer masterMixer;
+    [SerializeField] private AudioMixerGroup sfxMixerGroup;
 
+    [Header("UI")]
+    public Slider volumeSlider;
+
+    [Header("Clips de Música")]
     public AudioClip menuMusic;
     public AudioClip gameplayMusic;
+
+    [Header("Clips de Efectos")]
+    [SerializeField] private AudioClip shootClip;
+    [SerializeField] private AudioClip stepClip;
+    [SerializeField] private AudioClip pickupHealthClip;
+    [SerializeField] private AudioClip pickupXPClip;
+    [SerializeField] private AudioClip enemyHitClip;
 
     private const string MusicVolumeKey = "volume";
     private const string MixerParamName = "volume";
     private const string MuteKey = "muted";
+    private const string SFXMixerParam = "sfx";
+
     private bool isMuted = false;
 
     void Awake()
@@ -34,39 +49,35 @@ public class AudioMenu : MonoBehaviour
 
         SceneManager.sceneLoaded += OnSceneLoaded;
 
-        if (audioSource == null)
+        if (sfxSource != null && sfxMixerGroup != null)
         {
-            Debug.LogError("AudioMenu: audioSource no asignado en el Inspector.");
+            sfxSource.outputAudioMixerGroup = sfxMixerGroup;
         }
-        else
+
+        if (audioSource != null)
         {
             if (!audioSource.isPlaying || audioSource.clip != menuMusic)
             {
                 audioSource.clip = menuMusic;
                 audioSource.loop = true;
                 audioSource.Play();
-                Debug.Log("AudioMenu: Música del menú iniciada en Awake.");
             }
         }
+        LoadVolume();
     }
 
     void OnDestroy()
     {
-        Debug.Log("AudioMenu OnDestroy: Inicio.");
-        SceneManager.sceneLoaded -= OnSceneLoaded; 
-        Debug.Log("AudioMenu: Desuscrito de SceneManager.sceneLoaded.");
+        SceneManager.sceneLoaded -= OnSceneLoaded;
 
         if (volumeSlider != null)
         {
             volumeSlider.onValueChanged.RemoveAllListeners();
-            Debug.Log("AudioMenu: Listeners del slider eliminados.");
         }
-        Debug.Log("AudioMenu OnDestroy: Fin.");
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Debug.Log($"AudioMenu OnSceneLoaded: Escena '{scene.name}' cargada. Mode: {mode}");
 
         if (scene.name == "MainMenu")
         {
@@ -82,7 +93,6 @@ public class AudioMenu : MonoBehaviour
 
     private void FindAndSetupVolumeSlider()
     {
-        Debug.Log("AudioMenu FindAndSetupVolumeSlider: Buscando Slider (incluyendo inactivos)...");
         Slider[] allSliders = FindObjectsByType<Slider>(FindObjectsInactive.Include, FindObjectsSortMode.None);
 
         if (allSliders.Length > 0)
@@ -98,54 +108,44 @@ public class AudioMenu : MonoBehaviour
 
             if (volumeSlider != null)
             {
-                Debug.Log("AudioMenu FindAndSetupVolumeSlider: Slider encontrado y asignado.");
                 volumeSlider.onValueChanged.RemoveAllListeners();
                 volumeSlider.onValueChanged.AddListener(SetMusicVolume);
-                Debug.Log("AudioMenu FindAndSetupVolumeSlider: Listener del slider añadido.");
 
                 LoadVolume();
-                Debug.Log("AudioMenu FindAndSetupVolumeSlider: LoadVolume llamado.");
             }
         }
     }
 
     public void SetMusicVolume(float volume)
     {
-        Debug.Log($"AudioMenu SetMusicVolume: Intentando establecer volumen a {volume}.");
-
         PlayerPrefs.SetFloat(MusicVolumeKey, volume);
         PlayerPrefs.Save();
 
         if (isMuted)
-        {
-            Debug.Log("AudioMenu SetMusicVolume: Ignorado porque está muteado.");
             return;
-        }
+ 
 
         if (masterMixer != null)
         {
             float mixerVolume = (volume == 0) ? -80f : Mathf.Log10(volume) * 20;
             masterMixer.SetFloat(MixerParamName, mixerVolume);
-            Debug.Log($"AudioMenu SetMusicVolume: Volumen establecido en Mixer a {mixerVolume}dB.");
+            masterMixer.SetFloat(SFXMixerParam, mixerVolume);
         }
     }
 
 
     private void LoadVolume()
     {
-        Debug.Log("AudioMenu LoadVolume: Iniciando carga de volumen...");
         float savedVolume = 0.75f;
 
         if (PlayerPrefs.HasKey(MusicVolumeKey))
         {
             savedVolume = PlayerPrefs.GetFloat(MusicVolumeKey);
-            Debug.Log($"AudioMenu LoadVolume: Volumen encontrado en PlayerPrefs: {savedVolume}.");
         }
         else
         {
             PlayerPrefs.SetFloat(MusicVolumeKey, savedVolume);
             PlayerPrefs.Save();
-            Debug.Log("AudioMenu LoadVolume: No se encontró volumen en PlayerPrefs, usando valor por defecto.");
         }
 
         if (PlayerPrefs.HasKey(MuteKey))
@@ -161,7 +161,7 @@ public class AudioMenu : MonoBehaviour
         if (isMuted)
         {
             masterMixer.SetFloat(MixerParamName, -80f);
-            Debug.Log("AudioMenu LoadVolume: Mute activado, volumen en -80dB.");
+            masterMixer.SetFloat(SFXMixerParam, -80f);
         }
         else
         {
@@ -177,7 +177,6 @@ public class AudioMenu : MonoBehaviour
             audioSource.clip = gameplayMusic;
             audioSource.loop = true;
             audioSource.Play();
-            Debug.Log("AudioMenu: Cambiando a música del juego.");
         }
     }
 
@@ -189,7 +188,6 @@ public class AudioMenu : MonoBehaviour
             audioSource.clip = menuMusic;
             audioSource.loop = true;
             audioSource.Play();
-            Debug.Log("AudioMenu: Volviendo a música del menú.");
         }
     }
 
@@ -198,7 +196,6 @@ public class AudioMenu : MonoBehaviour
         if (audioSource != null)
         {
             audioSource.Stop();
-            Debug.Log("AudioMenu: Música detenida.");
         }
     }
 
@@ -209,17 +206,31 @@ public class AudioMenu : MonoBehaviour
         if (isMuted)
         {
             masterMixer.SetFloat(MixerParamName, -80f);
-            Debug.Log("AudioMenu: Mute activado.");
+            masterMixer.SetFloat(SFXMixerParam, -80f);
         }
         else
         {
             float volume = PlayerPrefs.GetFloat(MusicVolumeKey, 0.75f);
             float mixerVolume = (volume == 0) ? -80f : Mathf.Log10(volume) * 20f;
             masterMixer.SetFloat(MixerParamName, mixerVolume);
-            Debug.Log($"AudioMenu: Mute desactivado. Volumen restaurado a {mixerVolume} dB.");
+            masterMixer.SetFloat(SFXMixerParam, mixerVolume);
         }
 
         PlayerPrefs.SetInt(MuteKey, isMuted ? 1 : 0);
         PlayerPrefs.Save();
     }
+
+    public void PlaySFX(AudioClip clip, float volume = 1f)
+    {
+        if (clip != null && sfxSource != null)
+        {
+            sfxSource.PlayOneShot(clip, volume);
+        }
+    }
+
+    public void PlayShootSound() => PlaySFX(shootClip);
+    public void PlayStepSound() => PlaySFX(stepClip, 0.5f);
+    public void PlayPickupHealth() => PlaySFX(pickupHealthClip);
+    public void PlayPickupXP() => PlaySFX(pickupXPClip);
+    public void PlayEnemyHit() => PlaySFX(enemyHitClip);
 }

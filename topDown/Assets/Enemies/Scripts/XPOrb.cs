@@ -16,6 +16,7 @@ public class XPOrb : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            AudioMenu.Instance.PlayPickupXP();
             PlayerXp playerXp = other.GetComponent<PlayerXp>();
             if (playerXp != null)
             {

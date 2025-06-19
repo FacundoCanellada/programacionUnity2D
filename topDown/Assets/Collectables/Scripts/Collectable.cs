@@ -27,6 +27,7 @@ public class Collectable : MonoBehaviour
 
         if (player != null )
         {
+            AudioMenu.Instance.PlayPickupHealth();
             if (collectableBehavior != null)
             {
                 collectableBehavior.onCollected(player.gameObject);

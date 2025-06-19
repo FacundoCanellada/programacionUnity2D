@@ -50,6 +50,8 @@ public class enemyHealth : MonoBehaviour
         currentHealth -= damage;
         Debug.Log($"[{gameObject.name}] recibió {damage} de daño. Vida restante: {currentHealth}");
 
+        AudioMenu.Instance.PlayEnemyHit();
+
         if (currentHealth <= 0)
         {
             Die();

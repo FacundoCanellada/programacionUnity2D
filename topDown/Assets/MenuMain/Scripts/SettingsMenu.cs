@@ -57,7 +57,8 @@ public class SettingsMenu : MonoBehaviour
 
         if (audioMixer != null && audioMixer.GetFloat("volume", out float currentVolume))
         {
-            musicSilder.value = Mathf.Pow(10, currentVolume / 20);
+            float sliderValue = Mathf.Pow(10, currentVolume / 20f);
+            musicSilder.value = Mathf.Clamp(sliderValue, 0.1f, 1f);
         }
     }
 
@@ -76,7 +77,7 @@ public class SettingsMenu : MonoBehaviour
 
     public void SetMusicVolume()
     {
-        float volume = musicSilder.value;
+        float volume = Mathf.Clamp(musicSilder.value, 0.0001f, 1f);
         audioMixer.SetFloat("volume", Mathf.Log10(volume) * 20);
     }
 

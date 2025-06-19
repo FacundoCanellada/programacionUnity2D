@@ -111,6 +111,7 @@ public class shooting : MonoBehaviour
     // MODIFICA EL MÉTODO FIRE PARA QUE LAS BALAS APUNTEN CON PRECISIÓN (360 grados)
     void Fire()
     {
+        AudioMenu.Instance.PlayShootSound();
         GameObject bullet = GetAvaibleBullet();
         if (bullet != null)
         {
