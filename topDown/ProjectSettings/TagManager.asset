@@ -50,5 +50,9 @@ TagManager:
   - name: Collectable
     uniqueID: 4147914343
     locked: 0
+  - name: Bullet
+    uniqueID: 136364971
+    locked: 0
   m_RenderingLayers:
   - Default
+  - Bullet

@@ -1,0 +1,302 @@
+fileFormatVersion: 2
+guid: ed3ab63d82a3e5242a513481198ec475
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2637902484824923244
+    second: Anim_EnemyShoot_ShootBody_0
+  - first:
+      213: -2965641701450559664
+    second: Anim_EnemyShoot_ShootBody_1
+  - first:
+      213: 6609844148624010957
+    second: Anim_EnemyShoot_ShootBody_2
+  - first:
+      213: -8387522533868242160
+    second: Anim_EnemyShoot_ShootBody_3
+  - first:
+      213: -7414715629497960368
+    second: Anim_EnemyShoot_ShootBody_4
+  - first:
+      213: 1216888280646594658
+    second: Anim_EnemyShoot_ShootBody_5
+  - first:
+      213: 5258247359537514370
+    second: Anim_EnemyShoot_ShootBody_6
+  - first:
+      213: -6731005856929026290
+    second: Anim_EnemyShoot_ShootBody_7
+  - first:
+      213: -539046148037109233
+    second: Anim_EnemyShoot_ShootBody_8
+  - first:
+      213: 726534990208117224
+    second: Anim_EnemyShoot_ShootBody_9
+  - first:
+      213: 8945842833727632191
+    second: Anim_EnemyShoot_ShootBody_10
+  - first:
+      213: 7221560015802832111
+    second: Anim_EnemyShoot_ShootBody_11
+  - first:
+      213: 2319898213769796654
+    second: Anim_EnemyShoot_ShootBody_12
+  - first:
+      213: 5600683976028425679
+    second: Anim_EnemyShoot_ShootBody_13
+  - first:
+      213: -303510523406193639
+    second: Anim_EnemyShoot_ShootBody_14
+  - first:
+      213: 5614045953865921632
+    second: Anim_EnemyShoot_ShootBody_15
+  - first:
+      213: 5801050746840354730
+    second: Anim_EnemyShoot_ShootBody_16
+  - first:
+      213: -7805678664766529266
+    second: Anim_EnemyShoot_ShootBody_17
+  - first:
+      213: 6943150646885707687
+    second: Anim_EnemyShoot_ShootBody_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 250
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Anim_EnemyShoot_ShootBody_0
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 1798
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493e3ef8aa9446bd0800000000000000
+      internalID: -2637902484824923244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyShoot_ShootBody_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1798
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05f44fdc59ce7d6d0800000000000000
+      internalID: -2965641701450559664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyShoot_ShootBody_2
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1798
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcead639b32eabb50800000000000000
+      internalID: 6609844148624010957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyShoot_ShootBody_3
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1798
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01bf237c1b8899b80800000000000000
+      internalID: -8387522533868242160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Anim_EnemyShoot_ShootBody_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1798
+        width: 250
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1c3165e2857724590c18cbd04e9fab
+      internalID: -7414715629497960368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 2ecaa2c6ab4f1ce44b5a39ac0a6e71b4
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Anim_EnemyShoot_ShootBody_0: -2637902484824923244
+      Anim_EnemyShoot_ShootBody_1: -2965641701450559664
+      Anim_EnemyShoot_ShootBody_2: 6609844148624010957
+      Anim_EnemyShoot_ShootBody_3: -8387522533868242160
+      Anim_EnemyShoot_ShootBody_4: -7414715629497960368
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

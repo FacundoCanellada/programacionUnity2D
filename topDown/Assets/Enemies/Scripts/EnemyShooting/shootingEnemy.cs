@@ -4,6 +4,7 @@ public class EnemyShooting : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform firePoint;
+    private Animator animator;
 
     [SerializeField] public float fireCooldown = 2f;
     private float fireTimer = 0f;
@@ -19,6 +20,7 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] private float firePointOffsetX = 0.5f;
     void Start()
     {
+        animator = transform.Find("Body").GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player")?.transform;
 
         bulletLifetime = fireCooldown * poolSize;
@@ -58,6 +60,7 @@ public class EnemyShooting : MonoBehaviour
 
     void Fire()
     {
+        
         Vector3 direction = (player.position - firePoint.position).normalized;
 
         float[] angles = { -15f, 0f, 15f };
@@ -74,6 +77,7 @@ public class EnemyShooting : MonoBehaviour
         bullet.transform.rotation = Quaternion.LookRotation(Vector3.forward, rotatedDir);
 
         bullet.SetActive(true);
+        animator.SetTrigger("Shoot");
         bullet.GetComponent<EnemyBullet>().Launch(rotatedDir.normalized);
     }
 }
