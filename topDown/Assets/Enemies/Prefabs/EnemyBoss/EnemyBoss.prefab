@@ -203,7 +203,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -256,7 +256,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -310,7 +310,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 1, b: 1, a: 1}
+      maxColor: {r: 0.7924528, g: 0.43857738, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 0.735849, g: 0.16521885, b: 0.16521885, a: 1}
@@ -690,7 +690,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     randomizeRotationDirection: 0
-    gravitySource: 0
+    gravitySource: 1
     maxNumParticles: 1000
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
@@ -4867,7 +4867,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 2705ad9229cbde44b94fd24b65e04b27, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4911,7 +4911,7 @@ ParticleSystemRenderer:
   m_VertexStreams: 00010304
   m_UseCustomTrailVertexStreams: 0
   m_TrailVertexStreams: 00010304
-  m_Mesh: {fileID: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
   m_Mesh1: {fileID: 0}
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
@@ -4938,7 +4938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -1861352561867823450, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: damageAmount
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -1861352561867823450, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: damageCooldown
@@ -5089,7 +5089,7 @@ MonoBehaviour:
   dashDuration: 0.3
   dashCooldown: 14
   chargeTime: 2
-  dashDamage: 25
+  dashDamage: 20
   knockbackForce: 50
   enemyDetector: {fileID: 738555785476104956}
   chargeEffect: {fileID: 3655601025581694622}
