@@ -4954,7 +4954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2059354639260777476, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: maxHealth
-      value: 50
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 2684412660563337945, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_LocalScale.x
@@ -5026,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5730694696883540469, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5752285015299947338, guid: d11f744947defe543bf16a0353fb7fd5, type: 3}
       propertyPath: m_Controller
@@ -5090,7 +5090,7 @@ MonoBehaviour:
   dashCooldown: 14
   chargeTime: 2
   dashDamage: 20
-  knockbackForce: 50
+  knockbackForce: 30
   enemyDetector: {fileID: 738555785476104956}
   chargeEffect: {fileID: 3655601025581694622}
 --- !u!114 &2039011980575280580
